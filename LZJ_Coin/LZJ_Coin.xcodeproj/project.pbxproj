@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		383C14D73A3BD2D788703634 /* Pods_LZJ_Coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */; };
+		400FC928AD668729A0203A59 /* Pods_LZJ_ShowCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5584BF9BB5510CCE3E5182EC /* Pods_LZJ_ShowCoin.framework */; };
 		6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */; };
 		6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191EFC1ECD4E0F00C21065 /* ViewController.swift */; };
 		6B191F001ECD4E0F00C21065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B191EFE1ECD4E0F00C21065 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5584BF9BB5510CCE3E5182EC /* Pods_LZJ_ShowCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_ShowCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin.release.xcconfig"; sourceTree = "<group>"; };
 		6B191EF71ECD4E0F00C21065 /* LZJ_Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZJ_Coin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		6B3A95921ECD891E00A84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.release.xcconfig"; sourceTree = "<group>"; };
 		F42B9792691C8F63931E39DE /* Pods-LZJ_Coin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B3A958B1ECD891E00A84749 /* NotificationCenter.framework in Frameworks */,
+				400FC928AD668729A0203A59 /* Pods_LZJ_ShowCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,8 @@
 			children = (
 				F42B9792691C8F63931E39DE /* Pods-LZJ_Coin.debug.xcconfig */,
 				5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */,
+				DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */,
+				EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 			children = (
 				9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */,
 				6B3A958A1ECD891E00A84749 /* NotificationCenter.framework */,
+				5584BF9BB5510CCE3E5182EC /* Pods_LZJ_ShowCoin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B3A95961ECD891E00A84749 /* Build configuration list for PBXNativeTarget "LZJ_ShowCoin" */;
 			buildPhases = (
+				ABE305E767E30C9B4E0F42E7 /* [CP] Check Pods Manifest.lock */,
 				6B3A95851ECD891E00A84749 /* Sources */,
 				6B3A95861ECD891E00A84749 /* Frameworks */,
 				6B3A95871ECD891E00A84749 /* Resources */,
+				6D623B47E116F890CAFF52C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,6 +317,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D623B47E116F890CAFF52C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE305E767E30C9B4E0F42E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		DC02D95B666CF2B30B42543C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -514,6 +554,7 @@
 		};
 		6B3A95971ECD891E00A84749 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = LZJ_ShowCoin/LZJ_ShowCoin.entitlements;
 				DEVELOPMENT_TEAM = 8GTQ22BPX6;
@@ -529,6 +570,7 @@
 		};
 		6B3A95981ECD891E00A84749 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = LZJ_ShowCoin/LZJ_ShowCoin.entitlements;
 				DEVELOPMENT_TEAM = 8GTQ22BPX6;

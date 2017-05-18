@@ -8,7 +8,7 @@
 
 import UIKit
 import NotificationCenter
-
+import SwiftyJSON
 class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var showLbl: UILabel!
@@ -38,9 +38,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
                 if data != nil{
                     DispatchQueue.main.async {
-
-                        print(data)
-                        self.showLbl?.text = "finished" + (data?.description)!
+                        let json = JSON(data!)
+                        print(json)
+                        self.showLbl?.text = "Buy：" + (json["ticker"]["buy"].stringValue) + " / Sell：" + (json["ticker"]["sell"].stringValue)
                         
                     }
                 }
