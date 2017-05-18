@@ -7,14 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		383C14D73A3BD2D788703634 /* Pods_LZJ_Coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */; };
 		6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */; };
 		6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191EFC1ECD4E0F00C21065 /* ViewController.swift */; };
 		6B191F001ECD4E0F00C21065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B191EFE1ECD4E0F00C21065 /* Main.storyboard */; };
 		6B191F021ECD4E0F00C21065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B191F011ECD4E0F00C21065 /* Assets.xcassets */; };
 		6B191F051ECD4E0F00C21065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B191F031ECD4E0F00C21065 /* LaunchScreen.storyboard */; };
+		6B3A95811ECD57A100A84749 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A95801ECD57A100A84749 /* Podfile */; };
+		6B3A95841ECD59D200A84749 /* LTCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A95831ECD59D200A84749 /* LTCoin.swift */; };
+		6B3A958B1ECD891E00A84749 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3A958A1ECD891E00A84749 /* NotificationCenter.framework */; };
+		6B3A958E1ECD891E00A84749 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A958D1ECD891E00A84749 /* TodayViewController.swift */; };
+		6B3A95911ECD891E00A84749 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */; };
+		6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6B3A95931ECD891E00A84749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B191EEF1ECD4E0F00C21065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B3A95881ECD891E00A84749;
+			remoteInfo = LZJ_ShowCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B3A95991ECD891E00A84749 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin.release.xcconfig"; sourceTree = "<group>"; };
 		6B191EF71ECD4E0F00C21065 /* LZJ_Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZJ_Coin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B191EFC1ECD4E0F00C21065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +54,15 @@
 		6B191F011ECD4E0F00C21065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B191F041ECD4E0F00C21065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B191F061ECD4E0F00C21065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3A95801ECD57A100A84749 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6B3A95831ECD59D200A84749 /* LTCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCoin.swift; sourceTree = "<group>"; };
+		6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LZJ_ShowCoin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3A958A1ECD891E00A84749 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6B3A958D1ECD891E00A84749 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6B3A95901ECD891E00A84749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6B3A95921ECD891E00A84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42B9792691C8F63931E39DE /* Pods-LZJ_Coin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +70,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383C14D73A3BD2D788703634 /* Pods_LZJ_Coin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B3A95861ECD891E00A84749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B3A958B1ECD891E00A84749 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530AC2007197E3371A05DE89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F42B9792691C8F63931E39DE /* Pods-LZJ_Coin.debug.xcconfig */,
+				5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B191EEE1ECD4E0F00C21065 = {
 			isa = PBXGroup;
 			children = (
+				6B3A95801ECD57A100A84749 /* Podfile */,
 				6B191EF91ECD4E0F00C21065 /* LZJ_Coin */,
+				6B3A958C1ECD891E00A84749 /* LZJ_ShowCoin */,
 				6B191EF81ECD4E0F00C21065 /* Products */,
+				530AC2007197E3371A05DE89 /* Pods */,
+				96DD4470BDB8DF6E2A18592E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6B191EF71ECD4E0F00C21065 /* LZJ_Coin.app */,
+				6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,8 +132,36 @@
 		6B3A957B1ECD4FD800A84749 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				6B3A95821ECD59B700A84749 /* Litecoin */,
 			);
 			path = Section;
+			sourceTree = "<group>";
+		};
+		6B3A95821ECD59B700A84749 /* Litecoin */ = {
+			isa = PBXGroup;
+			children = (
+				6B3A95831ECD59D200A84749 /* LTCoin.swift */,
+			);
+			path = Litecoin;
+			sourceTree = "<group>";
+		};
+		6B3A958C1ECD891E00A84749 /* LZJ_ShowCoin */ = {
+			isa = PBXGroup;
+			children = (
+				6B3A958D1ECD891E00A84749 /* TodayViewController.swift */,
+				6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */,
+				6B3A95921ECD891E00A84749 /* Info.plist */,
+			);
+			path = LZJ_ShowCoin;
+			sourceTree = "<group>";
+		};
+		96DD4470BDB8DF6E2A18592E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */,
+				6B3A958A1ECD891E00A84749 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,18 +171,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B191F091ECD4E0F00C21065 /* Build configuration list for PBXNativeTarget "LZJ_Coin" */;
 			buildPhases = (
+				DC02D95B666CF2B30B42543C /* [CP] Check Pods Manifest.lock */,
 				6B191EF31ECD4E0F00C21065 /* Sources */,
 				6B191EF41ECD4E0F00C21065 /* Frameworks */,
 				6B191EF51ECD4E0F00C21065 /* Resources */,
+				1C1D164FC926ABF1BFA85E0C /* [CP] Embed Pods Frameworks */,
+				5963E9EA2395AF5EEECF25B3 /* [CP] Copy Pods Resources */,
+				6B3A95991ECD891E00A84749 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6B3A95941ECD891E00A84749 /* PBXTargetDependency */,
 			);
 			name = LZJ_Coin;
 			productName = LZJ_Coin;
 			productReference = 6B191EF71ECD4E0F00C21065 /* LZJ_Coin.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6B3A95881ECD891E00A84749 /* LZJ_ShowCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B3A95961ECD891E00A84749 /* Build configuration list for PBXNativeTarget "LZJ_ShowCoin" */;
+			buildPhases = (
+				6B3A95851ECD891E00A84749 /* Sources */,
+				6B3A95861ECD891E00A84749 /* Frameworks */,
+				6B3A95871ECD891E00A84749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZJ_ShowCoin;
+			productName = LZJ_ShowCoin;
+			productReference = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,6 +217,11 @@
 				ORGANIZATIONNAME = LZJ;
 				TargetAttributes = {
 					6B191EF61ECD4E0F00C21065 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8GTQ22BPX6;
+						ProvisioningStyle = Automatic;
+					};
+					6B3A95881ECD891E00A84749 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8GTQ22BPX6;
 						ProvisioningStyle = Automatic;
@@ -123,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				6B191EF61ECD4E0F00C21065 /* LZJ_Coin */,
+				6B3A95881ECD891E00A84749 /* LZJ_ShowCoin */,
 			);
 		};
 /* End PBXProject section */
@@ -134,23 +254,97 @@
 			files = (
 				6B191F051ECD4E0F00C21065 /* LaunchScreen.storyboard in Resources */,
 				6B191F021ECD4E0F00C21065 /* Assets.xcassets in Resources */,
+				6B3A95811ECD57A100A84749 /* Podfile in Resources */,
 				6B191F001ECD4E0F00C21065 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6B3A95871ECD891E00A84749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B3A95911ECD891E00A84749 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C1D164FC926ABF1BFA85E0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5963E9EA2395AF5EEECF25B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC02D95B666CF2B30B42543C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B191EF31ECD4E0F00C21065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3A95841ECD59D200A84749 /* LTCoin.swift in Sources */,
 				6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */,
 				6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6B3A95851ECD891E00A84749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B3A958E1ECD891E00A84749 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B3A95941ECD891E00A84749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B3A95881ECD891E00A84749 /* LZJ_ShowCoin */;
+			targetProxy = 6B3A95931ECD891E00A84749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6B191EFE1ECD4E0F00C21065 /* Main.storyboard */ = {
@@ -167,6 +361,14 @@
 				6B191F041ECD4E0F00C21065 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B3A95901ECD891E00A84749 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -269,11 +471,14 @@
 		};
 		6B191F0A1ECD4E0F00C21065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42B9792691C8F63931E39DE /* Pods-LZJ_Coin.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8GTQ22BPX6;
 				INFOPLIST_FILE = LZJ_Coin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "party.lzj.LZJ-Coin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,15 +489,46 @@
 		};
 		6B191F0B1ECD4E0F00C21065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8GTQ22BPX6;
 				INFOPLIST_FILE = LZJ_Coin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "party.lzj.LZJ-Coin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6B3A95971ECD891E00A84749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8GTQ22BPX6;
+				INFOPLIST_FILE = LZJ_ShowCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "party.lzj.LZJ-Coin.LZJ-ShowCoin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6B3A95981ECD891E00A84749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8GTQ22BPX6;
+				INFOPLIST_FILE = LZJ_ShowCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "party.lzj.LZJ-Coin.LZJ-ShowCoin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -317,6 +553,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6B3A95961ECD891E00A84749 /* Build configuration list for PBXNativeTarget "LZJ_ShowCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B3A95971ECD891E00A84749 /* Debug */,
+				6B3A95981ECD891E00A84749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

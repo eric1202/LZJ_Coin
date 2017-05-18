@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+use_frameworks!
+target 'LZJ_Coin' do
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+pod 'SwiftyJSON'
+pod 'Alamofire', '~> 4.4'
+pod 'RxSwift',    '~> 3.0'
+pod 'RxCocoa',    '~> 3.0'
+end

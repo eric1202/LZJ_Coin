@@ -1,0 +1,6 @@
+framework module Pods_LZJ_Coin {
+  umbrella header "Pods-LZJ_Coin-umbrella.h"
+
+  export *
+  module * { export * }
+}
