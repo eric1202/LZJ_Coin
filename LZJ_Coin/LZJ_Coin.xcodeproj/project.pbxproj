@@ -61,6 +61,7 @@
 		6B3A958D1ECD891E00A84749 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		6B3A95901ECD891E00A84749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6B3A95921ECD891E00A84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42B9792691C8F63931E39DE /* Pods-LZJ_Coin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +149,7 @@
 		6B3A958C1ECD891E00A84749 /* LZJ_ShowCoin */ = {
 			isa = PBXGroup;
 			children = (
+				6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */,
 				6B3A958D1ECD891E00A84749 /* TodayViewController.swift */,
 				6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */,
 				6B3A95921ECD891E00A84749 /* Info.plist */,
@@ -225,6 +227,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8GTQ22BPX6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -508,6 +515,7 @@
 		6B3A95971ECD891E00A84749 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LZJ_ShowCoin/LZJ_ShowCoin.entitlements;
 				DEVELOPMENT_TEAM = 8GTQ22BPX6;
 				INFOPLIST_FILE = LZJ_ShowCoin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -522,6 +530,7 @@
 		6B3A95981ECD891E00A84749 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LZJ_ShowCoin/LZJ_ShowCoin.entitlements;
 				DEVELOPMENT_TEAM = 8GTQ22BPX6;
 				INFOPLIST_FILE = LZJ_ShowCoin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
