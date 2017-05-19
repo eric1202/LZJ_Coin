@@ -6,11 +6,13 @@ pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.4'
 pod 'RxSwift',    '~> 3.0'
 pod 'RxCocoa',    '~> 3.0'
+pod 'Charts'
+pod 'HandyJSON'
 end
 
 target 'LZJ_ShowCoin'  do
 pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.4'
-
+pod 'HandyJSON'
 
 end

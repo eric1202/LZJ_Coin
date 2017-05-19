@@ -9,10 +9,20 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import HandyJSON
 
-class LTCoin: NSObject {
-    public var price = 0
-    public var amount = 0
+class LTCoin: HandyJSON {
+
+    public var timeStamp = 0.0
+    public var openPrice = 0.0
+    public var highPrice = 0.0
+    public var lowPrice = 0.0
+    public var endPrice = 0.0
+    public var tradeVolume = 0.0
+
+    required init() {
+
+    }
 
     class func getCurrentPrice(completion:@escaping(_ data:Any?,_ error:Error?)->()){
 
@@ -27,14 +37,34 @@ class LTCoin: NSObject {
 
         }
 
+    }
 
-//        Alamofire.request("https://www.okcoin.cn/api/v1/ticker.do?symbol=ltc_cny").validate().responseJSON { response in
-//            switch response.result {
-//            case .success:
-//                completion(response,nil)
-//            case .failure(let error):
-//                completion(nil,error)
-//            }
-//        }
+    class func getKline(type:String,completion:@escaping(_ datas:[LTCoin]?,_ error:Error?)->Void) {
+        let url = "https://www.okcoin.cn/api/v1/kline.do?symbol=ltc_cny&type="+type
+        Alamofire.request(url).responseJSON { (res) in
+            if let err = res.error{
+                completion(nil,err)
+            }
+            else{
+                var temps = [LTCoin]()
+                let arrs = res.value as! NSArray
+                // json to model
+                for v in arrs{
+                    let json = v as! NSArray
+                    let c = LTCoin.init()
+                    c.timeStamp = json[0] as! Double
+                    c.openPrice = json[1] as! Double
+                    c.highPrice = json[2] as! Double
+                    c.lowPrice = json[3] as! Double
+                    c.endPrice = json[4] as! Double
+                    c.tradeVolume = json[5] as! Double
+
+                    temps .append(c)
+                }
+
+                completion(temps,nil)
+
+            }
+        }
     }
 }
