@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     //MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadData()
+        self.loadLitCoinData()
         if #available(iOS 10.0, *) {
             Timer.scheduledTimer(withTimeInterval: 6, repeats: true) { (t) in
-                self.loadData()
+                self.changeSegment(self.segment)
             }
         } else {
             // Fallback on earlier versions
@@ -45,15 +45,25 @@ class ViewController: UIViewController {
                 print("%@ coin : %@",JuBiCoin.CoinType.DOGE,c.description)
             }
         }
-        
+
     }
 
     //MARK: - Event
     @IBAction func changeSegment(_ sender: UISegmentedControl) {
+        let index = sender.selectedSegmentIndex
+        NSLog("select segment index :%ld", index)
+        switch index {
+        case 0:
+            self.loadLitCoinData()
+            break
 
+        default:
+            self.loadJuBiData(index: index)
+            break
+        }
     }
 
-    func loadData() {
+    func loadLitCoinData() {
         LTCoin .getCurrentPrice { (data, err) in
             if let error = err{
                 print(error)
@@ -68,7 +78,18 @@ class ViewController: UIViewController {
 
         }
     }
-    
+
+    func loadJuBiData(index:Int) -> () {
+        let arr = [JuBiCoin.CoinType.IFC,JuBiCoin.CoinType.DOGE,JuBiCoin.CoinType.XRP]
+        JuBiCoin.getTicker(type:arr[index-1], completion: { (coin, err) in
+            if let c = coin{
+                let low = c.lowPrice
+                let high = c.highPrice
+                self.bitLbl.text = String(low) + "   " + String(high)
+                self.liteLbl.text = String(c.buyPrice)
+            }
+        })
+    }
     
 }
 

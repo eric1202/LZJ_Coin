@@ -67,11 +67,18 @@
                                     <action selector="changeSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="QzO-kI-3Wu"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QD-bc-aAL">
+                                <rect key="frame" x="151" y="35" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="dka-un-g0A" secondAttribute="trailing" constant="10" id="1wK-i3-4OT"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="leading" secondItem="jGA-kW-33O" secondAttribute="leading" id="299-Ft-Xu4"/>
+                            <constraint firstItem="0QD-bc-aAL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HhK-db-ilJ"/>
                             <constraint firstItem="dka-un-g0A" firstAttribute="leading" secondItem="CwH-H8-Fjh" secondAttribute="leading" id="TKc-Xw-a9e"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="top" secondItem="dka-un-g0A" secondAttribute="top" id="UMa-11-RoY"/>
                             <constraint firstItem="dka-un-g0A" firstAttribute="trailing" secondItem="CwH-H8-Fjh" secondAttribute="trailing" id="bcY-Jf-6Pu"/>
@@ -82,6 +89,7 @@
                             <constraint firstItem="CwH-H8-Fjh" firstAttribute="baseline" secondItem="jGA-kW-33O" secondAttribute="firstBaseline" id="jwm-24-oRg"/>
                             <constraint firstItem="4sv-tb-m0b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="kma-6B-ckM"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="n73-4f-ft9"/>
+                            <constraint firstItem="0QD-bc-aAL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="tgn-5S-M0N"/>
                             <constraint firstItem="dka-un-g0A" firstAttribute="baseline" secondItem="Qzn-w5-kkn" secondAttribute="firstBaseline" id="uYe-43-TZK"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="uYh-i4-t5w"/>
                             <constraint firstItem="jGA-kW-33O" firstAttribute="top" secondItem="CwH-H8-Fjh" secondAttribute="top" id="v4o-Kn-IFU"/>
