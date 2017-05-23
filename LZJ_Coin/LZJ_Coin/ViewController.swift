@@ -13,9 +13,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var bitLbl: UILabel!
     @IBOutlet weak var liteLbl: UILabel!
+    @IBOutlet weak var segment: UISegmentedControl!
 
     private var chartView:CoinChartView? = nil
 
+    //MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadData()
@@ -32,12 +34,23 @@ class ViewController: UIViewController {
         self.view.addSubview(self.chartView!)
 
         LTCoin.getKline(type: "30min") { (arr, err) in
-//            print("\(arr)\n\(err)")
             if let coins = arr{
                 self.chartView?.drawChart(points: coins)
             }
         }
+
+        JuBiCoin.getTicker(type: .DOGE) { (coin, error) in
+            if let c = coin{
+
+                print("%@ coin : %@",JuBiCoin.CoinType.DOGE,c.description)
+            }
+        }
         
+    }
+
+    //MARK: - Event
+    @IBAction func changeSegment(_ sender: UISegmentedControl) {
+
     }
 
     func loadData() {

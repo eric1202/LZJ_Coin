@@ -21,6 +21,7 @@
 		6B3A95911ECD891E00A84749 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */; };
 		6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4095AD1ECEA13A00230FE1 /* ChartView.swift */; };
+		6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		6B3A95921ECD891E00A84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
 		6B4095AD1ECEA13A00230FE1 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuBiCoin.swift; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		6B3A957B1ECD4FD800A84749 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBAA581ED3D160008DDA55 /* JuBi */,
 				6B4095AC1ECEA13000230FE1 /* Chart */,
 				6B3A95821ECD59B700A84749 /* Litecoin */,
 			);
@@ -173,6 +176,14 @@
 				6B4095AD1ECEA13A00230FE1 /* ChartView.swift */,
 			);
 			path = Chart;
+			sourceTree = "<group>";
+		};
+		6BCBAA581ED3D160008DDA55 /* JuBi */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */,
+			);
+			path = JuBi;
 			sourceTree = "<group>";
 		};
 		96DD4470BDB8DF6E2A18592E /* Frameworks */ = {
@@ -384,6 +395,7 @@
 				6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */,
 				6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */,
 				6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */,
+				6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

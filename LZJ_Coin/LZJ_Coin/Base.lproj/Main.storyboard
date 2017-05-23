@@ -54,6 +54,19 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4sv-tb-m0b">
+                                <rect key="frame" x="15" y="64" width="345" height="29"/>
+                                <segments>
+                                    <segment title="ltc"/>
+                                    <segment title="ifc"/>
+                                    <segment title="doge"/>
+                                    <segment title="xrp"/>
+                                </segments>
+                                <color key="tintColor" red="0.97129087260000002" green="1" blue="0.517949196" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="QzO-kI-3Wu"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,9 +75,12 @@
                             <constraint firstItem="dka-un-g0A" firstAttribute="leading" secondItem="CwH-H8-Fjh" secondAttribute="leading" id="TKc-Xw-a9e"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="top" secondItem="dka-un-g0A" secondAttribute="top" id="UMa-11-RoY"/>
                             <constraint firstItem="dka-un-g0A" firstAttribute="trailing" secondItem="CwH-H8-Fjh" secondAttribute="trailing" id="bcY-Jf-6Pu"/>
+                            <constraint firstItem="4sv-tb-m0b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="d2e-FG-Rp2"/>
+                            <constraint firstAttribute="trailing" secondItem="4sv-tb-m0b" secondAttribute="trailing" constant="15" id="eOO-PF-KVq"/>
                             <constraint firstItem="jGA-kW-33O" firstAttribute="top" secondItem="Qzn-w5-kkn" secondAttribute="bottom" constant="71" id="jBV-hY-v2m"/>
                             <constraint firstItem="dka-un-g0A" firstAttribute="leading" secondItem="Qzn-w5-kkn" secondAttribute="trailing" constant="93" id="jn4-Zn-79k"/>
                             <constraint firstItem="CwH-H8-Fjh" firstAttribute="baseline" secondItem="jGA-kW-33O" secondAttribute="firstBaseline" id="jwm-24-oRg"/>
+                            <constraint firstItem="4sv-tb-m0b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="kma-6B-ckM"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="n73-4f-ft9"/>
                             <constraint firstItem="dka-un-g0A" firstAttribute="baseline" secondItem="Qzn-w5-kkn" secondAttribute="firstBaseline" id="uYe-43-TZK"/>
                             <constraint firstItem="Qzn-w5-kkn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="uYh-i4-t5w"/>
@@ -74,6 +90,7 @@
                     <connections>
                         <outlet property="bitLbl" destination="dka-un-g0A" id="yO5-ee-fqF"/>
                         <outlet property="liteLbl" destination="CwH-H8-Fjh" id="G97-8z-8hv"/>
+                        <outlet property="segment" destination="4sv-tb-m0b" id="EMB-P6-cWj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
