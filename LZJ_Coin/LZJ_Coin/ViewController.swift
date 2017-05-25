@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         self.chartView = CoinChartView(frame: CGRect(x: (screenw-300 )/2, y:screenh - 310, width: 300, height: 300), type: CoinChartView.ChartViewType.lite)
         self.view.addSubview(self.chartView!)
 
-        LTCoin.getKline(type: "30min") { (arr, err) in
+        LTCoin.getKline(type: "1hour") { (arr, err) in
             if let coins = arr{
                 self.chartView?.drawChart(points: coins)
             }

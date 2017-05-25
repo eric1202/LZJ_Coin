@@ -40,19 +40,28 @@ class CoinChartView: UIView {
 
     func drawChart(points:[LTCoin]) {
         var dataEntries: [ChartDataEntry] = []
+        var xValues = [String]()
         for (idx,coin) in points.enumerated() {
             let entry = ChartDataEntry(x: Double(idx), y: coin.highPrice)
             dataEntries .append(entry)
+            let date = Date(timeIntervalSince1970: coin.timeStamp/1000)
+            let dateFormatter = DateFormatter()
+            dateFormatter .setLocalizedDateFormatFromTemplate("MM-dd-HH")
+            let dateStr = dateFormatter.string(from: date)
+            xValues.append(dateStr)
         }
 
         let lineChartDataSet = LineChartDataSet(values: dataEntries, label: "折线图")
         lineChartDataSet.drawCirclesEnabled = false
 
-        let lineChartData = LineChartData()
-        lineChartData.addDataSet(lineChartDataSet)
+        let lineChartData = LineChartData(dataSet: lineChartDataSet)
+//        lineChartData.addDataSet(lineChartDataSet)
 
         self.chart?.data = lineChartData
-
+        self.chart?.xAxis.labelFont = UIFont.systemFont(ofSize: 9)
+        self.chart?.xAxis.valueFormatter = DefaultAxisValueFormatter(block: {(index, _) in
+            return xValues[Int(index)]
+        })
 
     }
 

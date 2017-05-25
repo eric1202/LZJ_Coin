@@ -10,6 +10,7 @@ PODS:
   - RxCocoa (3.4.1):
     - RxSwift (~> 3.4)
   - RxSwift (3.4.1)
+  - SnapKit (3.2.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - HandyJSON
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
+  - SnapKit (~> 3.2.0)
   - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -37,8 +39,9 @@ SPEC CHECKSUMS:
   HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
   RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
   RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 18c8dfcff6f827ce64d7789befc653d4bf9725ad
+PODFILE CHECKSUM: 5edd5e3810e96b26ab893e55e8901946ff6ecad7
 
 COCOAPODS: 1.1.1

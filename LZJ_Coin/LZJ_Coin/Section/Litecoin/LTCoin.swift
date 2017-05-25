@@ -40,7 +40,7 @@ class LTCoin: HandyJSON {
     }
 
     class func getKline(type:String,completion:@escaping(_ datas:[LTCoin]?,_ error:Error?)->Void) {
-        let url = "https://www.okcoin.cn/api/v1/kline.do?symbol=ltc_cny&type="+type
+        let url = "https://www.okcoin.cn/api/v1/kline.do?symbol=ltc_cny&since=1491148800000&type="+type
         Alamofire.request(url).responseJSON { (res) in
             if let err = res.error{
                 completion(nil,err)

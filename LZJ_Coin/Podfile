@@ -8,6 +8,7 @@ pod 'RxSwift',    '~> 3.0'
 pod 'RxCocoa',    '~> 3.0'
 pod 'Charts'
 pod 'HandyJSON'
+pod 'SnapKit', '~> 3.2.0'
 end
 
 target 'LZJ_ShowCoin'  do
