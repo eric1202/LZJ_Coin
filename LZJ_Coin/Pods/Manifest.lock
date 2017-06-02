@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.4.0)
+  - Bugly (2.4.8)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - Bugly
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Charts
   - HandyJSON
@@ -34,6 +36,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bugly: da3c02408c14838d498429320545a8e439392978
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
   HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
@@ -42,6 +45,6 @@ SPEC CHECKSUMS:
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 5edd5e3810e96b26ab893e55e8901946ff6ecad7
+PODFILE CHECKSUM: 365b52a6eeef4f61ea8f38fa6fa72fc54dabe903
 
 COCOAPODS: 1.1.1

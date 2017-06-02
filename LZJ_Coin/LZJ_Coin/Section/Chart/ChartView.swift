@@ -46,7 +46,7 @@ class CoinChartView: UIView {
             dataEntries .append(entry)
             let date = Date(timeIntervalSince1970: coin.timeStamp/1000)
             let dateFormatter = DateFormatter()
-            dateFormatter .setLocalizedDateFormatFromTemplate("MM-dd-HH")
+            dateFormatter .setLocalizedDateFormatFromTemplate("MMMd -HH")
             let dateStr = dateFormatter.string(from: date)
             xValues.append(dateStr)
         }
