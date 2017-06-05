@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import SwiftyJSON
 import Alamofire
+import Kingfisher
 
 class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
@@ -58,31 +59,14 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = UITableViewCell.init()
-        cell.selectionStyle = .none
+        let cell = NewsTableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier:"cell")
 
         let d = self.messages[indexPath.row] as! JSON
         cell.textLabel?.text = d["abstract"].stringValue
         cell.textLabel?.numberOfLines = 0
 
-        cell.contentView.backgroundColor = UIColor.init(red:CGFloat((arc4random()%100))/100.0, green:CGFloat((arc4random()%100))/100.0, blue: CGFloat((arc4random()%100))/100.0, alpha: 0.3)
-
-        let view = UIView()
-        view.backgroundColor = UIColor.init(red: CGFloat(arc4random()), green:CGFloat(arc4random()), blue: CGFloat(arc4random()), alpha: 1)
-        cell.contentView.addSubview(view)
-        cell.textLabel?.snp.remakeConstraints({ (make) in
-            make.left.equalTo(cell.contentView.snp.left).offset(15)
-            make.width.lessThanOrEqualTo(cell.contentView.snp.width)
-            make.bottom.equalTo(cell.contentView.snp.bottom).offset(-20)
-            make.top.equalTo(cell.contentView.snp.top).offset(20)
-        })
-        view.snp.makeConstraints { (make) in
-//            make.bottom.equalTo(cell.contentView.snp.bottom).offset(-20)
-            make.top.equalTo(cell.contentView.snp.top).offset(20)
-            make.right.equalTo(cell.contentView.snp.right).offset(-20)
-            make.size.equalTo(CGSize(width: 100, height: 100))
-            make.left.equalTo(cell.textLabel!.snp.right).offset(20)
-        }
+        let url = URL(string: d["media_avatar_url"].stringValue)
+        cell.imageV?.kf.setImage(with:url )
 
         return cell
     }

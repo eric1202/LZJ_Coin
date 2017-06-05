@@ -8,6 +8,7 @@ PODS:
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
   - HandyJSON (1.7.1)
+  - Kingfisher (3.6.2)
   - RxCocoa (3.4.1):
     - RxSwift (~> 3.4)
   - RxSwift (3.4.1)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Charts
   - HandyJSON
+  - Kingfisher
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SnapKit (~> 3.2.0)
@@ -40,11 +42,12 @@ SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
   HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
   RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
   RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 365b52a6eeef4f61ea8f38fa6fa72fc54dabe903
+PODFILE CHECKSUM: 4bca1051a80db0eb65fa0dad1938c45076973137
 
 COCOAPODS: 1.1.1
