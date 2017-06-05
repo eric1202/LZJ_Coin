@@ -59,12 +59,13 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = UITableViewCell.init()
+        cell.selectionStyle = .none
 
         let d = self.messages[indexPath.row] as! JSON
         cell.textLabel?.text = d["abstract"].stringValue
         cell.textLabel?.numberOfLines = 0
 
-        cell.contentView.backgroundColor = UIColor.init(red:CGFloat((arc4random()%100))/100.0, green:CGFloat((arc4random()%100))/100.0, blue: CGFloat((arc4random()%100))/100.0, alpha: 0.9)
+        cell.contentView.backgroundColor = UIColor.init(red:CGFloat((arc4random()%100))/100.0, green:CGFloat((arc4random()%100))/100.0, blue: CGFloat((arc4random()%100))/100.0, alpha: 0.3)
 
         let view = UIView()
         view.backgroundColor = UIColor.init(red: CGFloat(arc4random()), green:CGFloat(arc4random()), blue: CGFloat(arc4random()), alpha: 1)
@@ -86,6 +87,21 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.setSelected(false, animated: false)
 
+        let data = self.messages[indexPath.row] as! JSON
+        let url = data["display_url"]
+        let title = data["title"]
+
+        let vc = UIViewController.init()
+        vc.title = title.stringValue
+        let webView = UIWebView.init(frame: vc.view.bounds)
+        vc.view.addSubview(webView)
+        webView.loadRequest(URLRequest.init(url: URL.init(string: url.stringValue)!))
+
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
