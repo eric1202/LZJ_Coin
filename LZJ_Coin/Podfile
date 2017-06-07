@@ -11,6 +11,7 @@ pod 'HandyJSON'
 pod 'SnapKit', '~> 3.2.0'
 pod 'Bugly'
 pod 'Kingfisher'
+pod 'Then', '~> 2.1'
 end
 
 target 'LZJ_ShowCoin'  do

@@ -33,7 +33,6 @@ class NewsTableViewCell: UITableViewCell {
                 make.top.equalTo(cell.contentView.snp.top).offset(20)
             })
             self.imageV!.snp.makeConstraints { (make) in
-                //            make.bottom.equalTo(cell.contentView.snp.bottom).offset(-20)
                 make.top.equalTo(cell.contentView.snp.top).offset(20)
                 make.right.equalTo(cell.contentView.snp.right).offset(-20)
                 make.size.equalTo(CGSize(width: 100, height: 100))
@@ -45,6 +44,7 @@ class NewsTableViewCell: UITableViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
     }
 

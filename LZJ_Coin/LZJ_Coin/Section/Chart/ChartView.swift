@@ -40,6 +40,7 @@ class CoinChartView: UIView {
 
     func drawChart(points:[LTCoin]) {
         var dataEntries: [ChartDataEntry] = []
+
         var xValues = [String]()
         for (idx,coin) in points.enumerated() {
             let entry = ChartDataEntry(x: Double(idx), y: coin.highPrice)
@@ -53,8 +54,10 @@ class CoinChartView: UIView {
 
         let lineChartDataSet = LineChartDataSet(values: dataEntries, label: "折线图")
         lineChartDataSet.drawCirclesEnabled = false
-
+//        lineChartDataSet.circleColors = [UIColor.init(red: 220/255.0, green: 247/255.0, blue: 161/255.0, alpha: 1)];
+        lineChartDataSet.colors = [UIColor.init(red: 220/255.0, green: 247/255.0, blue: 161/255.0, alpha: 1)];
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
+
 //        lineChartData.addDataSet(lineChartDataSet)
 
         self.chart?.data = lineChartData
