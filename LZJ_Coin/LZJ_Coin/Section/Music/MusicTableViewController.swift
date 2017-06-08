@@ -7,32 +7,101 @@
 //
 
 import UIKit
+import AVFoundation
+class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
-class MusicTableViewController: UITableViewController {
-
-    var datas = [AnyObject]()
-
+    var datas = [String]()
+    var player: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //load local music
+
+        //local path
+
+        let path = Bundle.main.resourcePath //(forResourcesOfType: "mp3", inDirectory: "Resource") as [String]
+
+        let fm = FileManager.default
+
+        let s = fm.subpaths(atPath: path ?? "")
+        //        NSLog("path : %@", s ?? "no")
+
+        let results = s?.filter({ (ss) -> Bool in
+            if ss.contains(".mp3"){
+                return true
+            }
+            return false
+        })
+
+        NSLog("\n finally : %@",results ?? "")
+        datas = results!
+
+        tableView.reloadData()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return datas.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = String.init(format: "%ld - %ld", indexPath.section,indexPath.row)
+
+        cell?.textLabel?.text = datas[indexPath.row]
         return cell!
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        //        if(player.isPlaying){
+        //            player.stop()
+        //            player.currentTime=0;
+        //        }
+
+        let url = datas[indexPath.row]
+
+        let path = Bundle.main.url(forResource: url, withExtension: nil)
+
+        //        let pathURL = URL.init(fileURLWithPath: path!)
+        //
+        //        let player = try! AVAudioPlayer.init(contentsOf: path!)
+        //
+        //        player.numberOfLoops = 100;
+        //        player.play()
+
+
+
+        do {
+            player = try AVAudioPlayer(contentsOf: path!)
+            guard let player = player else { return }
+
+            player.delegate = self
+            player.prepareToPlay()
+            player.play()
+        } catch let error as NSError {
+            print(error.description)
+        }
+
+    }
+
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if flag{
+            print("*******audioPlayerDidFinishPlaying****")
+            
+        }
+    }
+    
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        if let e = error{
+            print(e,"************")
+        }
+    }
+    
 }
