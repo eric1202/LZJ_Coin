@@ -96,6 +96,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="Tkc-PT-aXJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="D9Y-g1-54F">
+                            <connections>
+                                <segue destination="c1J-Qg-FUe" kind="show" id="2al-sW-ndl"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="more" style="plain" id="30d-gR-Cbh">
                             <color key="tintColor" red="0.50588235290000005" green="0.76078431369999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -112,6 +117,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Music-->
+        <scene sceneID="mgk-Wb-5fS">
+            <objects>
+                <tableViewController title="Music" id="c1J-Qg-FUe" customClass="MusicTableViewController" customModule="LZJ_Coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="UIR-tk-Q9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50588235290000005" green="0.57254901960000004" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.50588235290000005" green="0.57254901960000004" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="2Tj-nY-zbC" rowHeight="73" style="IBUITableViewCellStyleDefault" id="UWi-e6-vSc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UWi-e6-vSc" id="294-LG-QSc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Tj-nY-zbC">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="72.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.50588235290000005" green="0.76078431369999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c1J-Qg-FUe" id="nkH-eg-mIu"/>
+                            <outlet property="delegate" destination="c1J-Qg-FUe" id="J86-CT-lDo"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYH-b7-lRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5999999999999" y="495.20239880059972"/>
         </scene>
         <!--what's more-->
         <scene sceneID="cF4-VU-spX">
@@ -167,14 +211,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Pk-6g-Dz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1870" y="-157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gt5-w4-zFT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rym-Hq-000" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="osg-Z7-Bdh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="osg-Z7-Bdh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.50588235290000005" green="0.57254901960000004" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
