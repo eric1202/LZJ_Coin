@@ -11,7 +11,7 @@ import AVFoundation
 class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
     var datas = [String]()
-    var player: AVAudioPlayer?
+    var player = AppHelper.sharedInstance.player
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,18 +76,25 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
         //        player.numberOfLoops = 100;
         //        player.play()
 
+        if let player1 = AppHelper.sharedInstance.player {
+            player1.insert(AVPlayerItem.init(url: path!), after: player1.items().last)
 
+            player1.play()
 
-        do {
-            player = try AVAudioPlayer(contentsOf: path!)
-            guard let player = player else { return }
-
-            player.delegate = self
-            player.prepareToPlay()
-            player.play()
-        } catch let error as NSError {
-            print(error.description)
+        }else{
+            print("no player")
         }
+//        do {
+
+//            player = try AVAudioPlayer(contentsOf: path!)
+//            guard let player = player else { return }
+//
+//            player.delegate = self
+//            player.prepareToPlay()
+//            player.play()
+//        } catch let error as NSError {
+//            print(error.description)
+//        }
 
     }
 

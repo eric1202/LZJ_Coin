@@ -22,9 +22,10 @@
 		6B3A95911ECD891E00A84749 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */; };
 		6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4095AD1ECEA13A00230FE1 /* ChartView.swift */; };
+		6B6942E31EEA3EAF00A6B4AB /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */; };
 		6B76898A1EE926CF006139BB /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7689891EE926CF006139BB /* MusicTableViewController.swift */; };
-		6B76898E1EE92987006139BB /* 你曾是少年-好妹妹乐队-南北.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898C1EE92987006139BB /* 你曾是少年-好妹妹乐队-南北.mp3 */; };
-		6B76898F1EE92987006139BB /* Hotel California-Eagles-The Studio Albums 1972-1979 Limited Edition.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898D1EE92987006139BB /* Hotel California-Eagles-The Studio Albums 1972-1979 Limited Edition.mp3 */; };
+		6B76898E1EE92987006139BB /* ncssn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898C1EE92987006139BB /* ncssn.mp3 */; };
+		6B76898F1EE92987006139BB /* Hotel California.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898D1EE92987006139BB /* Hotel California.mp3 */; };
 		6B97617D1ED6A67C001E11B4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */; };
 		6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */; };
 /* End PBXBuildFile section */
@@ -73,9 +74,10 @@
 		6B3A95921ECD891E00A84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
 		6B4095AD1ECEA13A00230FE1 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		6B7689891EE926CF006139BB /* MusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
-		6B76898C1EE92987006139BB /* 你曾是少年-好妹妹乐队-南北.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "你曾是少年-好妹妹乐队-南北.mp3"; sourceTree = "<group>"; };
-		6B76898D1EE92987006139BB /* Hotel California-Eagles-The Studio Albums 1972-1979 Limited Edition.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hotel California-Eagles-The Studio Albums 1972-1979 Limited Edition.mp3"; sourceTree = "<group>"; };
+		6B76898C1EE92987006139BB /* ncssn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ncssn.mp3; sourceTree = "<group>"; };
+		6B76898D1EE92987006139BB /* Hotel California.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hotel California.mp3"; sourceTree = "<group>"; };
 		6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuBiCoin.swift; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 		6B3A957B1ECD4FD800A84749 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				6B6942E11EEA3E9600A6B4AB /* Manager */,
 				6B7689881EE92603006139BB /* Music */,
 				6B97617B1ED6A661001E11B4 /* News */,
 				6BCBAA581ED3D160008DDA55 /* JuBi */,
@@ -191,6 +194,14 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
+		6B6942E11EEA3E9600A6B4AB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		6B7689881EE92603006139BB /* Music */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +213,8 @@
 		6B76898B1EE92965006139BB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				6B76898C1EE92987006139BB /* 你曾是少年-好妹妹乐队-南北.mp3 */,
-				6B76898D1EE92987006139BB /* Hotel California-Eagles-The Studio Albums 1972-1979 Limited Edition.mp3 */,
+				6B76898C1EE92987006139BB /* ncssn.mp3 */,
+				6B76898D1EE92987006139BB /* Hotel California.mp3 */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -335,8 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B76898E1EE92987006139BB /* 你曾是少年-好妹妹乐队-南北.mp3 in Resources */,
-				6B76898F1EE92987006139BB /* Hotel California-Eagles-The Studio Albums 1972-1979 Limited Edition.mp3 in Resources */,
+				6B76898E1EE92987006139BB /* ncssn.mp3 in Resources */,
+				6B76898F1EE92987006139BB /* Hotel California.mp3 in Resources */,
 				6B191F051ECD4E0F00C21065 /* LaunchScreen.storyboard in Resources */,
 				6B191F021ECD4E0F00C21065 /* Assets.xcassets in Resources */,
 				6B3A95811ECD57A100A84749 /* Podfile in Resources */,
@@ -441,6 +452,7 @@
 				6B76898A1EE926CF006139BB /* MusicTableViewController.swift in Sources */,
 				6B3202281EE5086B0094A0C7 /* NewsTableViewCell.swift in Sources */,
 				6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */,
+				6B6942E31EEA3EAF00A6B4AB /* AppHelper.swift in Sources */,
 				6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */,
 				6B97617D1ED6A67C001E11B4 /* NewsViewController.swift in Sources */,
 				6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */,

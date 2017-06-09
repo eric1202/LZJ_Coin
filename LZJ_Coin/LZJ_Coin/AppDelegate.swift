@@ -36,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try AVAudioSession.sharedInstance().setActive(true)
                 print("AVAudioSession is Active")
+
+                AppHelper.sharedInstance.readyToPlay()
             } catch {
                 print(error)
             }
