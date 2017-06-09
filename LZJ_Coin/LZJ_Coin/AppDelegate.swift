@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var timer:Timer?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -37,7 +38,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 try AVAudioSession.sharedInstance().setActive(true)
                 print("AVAudioSession is Active")
 
-                AppHelper.sharedInstance.readyToPlay()
+
+                if #available(iOS 10.0, *) {
+                    timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: { (t) in
+
+                        self.checkAndPlay()
+                    })
+                } else {
+                    // Fallback on earlier versions
+                   timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(checkAndPlay), userInfo: nil, repeats: true)
+                }
             } catch {
                 print(error)
             }
@@ -58,6 +68,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func checkAndPlay() {
+        //timer check the play list
+        if(AppHelper.sharedInstance.player?.items().count == 0){
+            timer?.invalidate()
+            return
+        }
+        AppHelper.sharedInstance.readyToPlay()
 
+    }
 }
 

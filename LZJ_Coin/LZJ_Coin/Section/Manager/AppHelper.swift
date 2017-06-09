@@ -18,29 +18,32 @@ class AppHelper: NSObject {
     static let sharedInstance: AppHelper = {
         let instance = AppHelper()
         instance.player = AVQueuePlayer()
+//        instance.player?.rate = 2
         // setup code
         return instance
     }()
+
 
     func readyToPlay() {
         guard let player = self.player else {
             print("player is nil")
             return
         }
-        if (player.items().count <= 1){
+        if (player.items().count == 1){
             //add items
-            let items = ["Hotel California","ncssn"]
+            let items = ["Hotel California.mp3","ncssn.mp3"]
 
             for i in items {
-                let url = Bundle.main.path(forResource: i, ofType: "mp3")
-                player.insert(AVPlayerItem.init(url: URL.init(string: url ?? "")!), after: player.items().last)
+                let path = Bundle.main.url(forResource: i, withExtension: nil)
+                player.insert(AVPlayerItem.init(url: path!), after: player.items().last)
             }
 
         }
         player.play()
+        player.rate = 2
     }
 
-    func playMusic() -> () {
+    func playMusic()  {
         player?.play()
     }
 }

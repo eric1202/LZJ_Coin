@@ -80,7 +80,7 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
             player1.insert(AVPlayerItem.init(url: path!), after: player1.items().last)
 
             player1.play()
-
+            player1.rate = 2
         }else{
             print("no player")
         }
