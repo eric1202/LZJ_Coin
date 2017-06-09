@@ -23,6 +23,7 @@
 		6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4095AD1ECEA13A00230FE1 /* ChartView.swift */; };
 		6B6942E31EEA3EAF00A6B4AB /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */; };
+		6B6942E51EEA7A7500A6B4AB /* mybro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B6942E41EEA7A7500A6B4AB /* mybro.mp3 */; };
 		6B76898A1EE926CF006139BB /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7689891EE926CF006139BB /* MusicTableViewController.swift */; };
 		6B76898E1EE92987006139BB /* ncssn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898C1EE92987006139BB /* ncssn.mp3 */; };
 		6B76898F1EE92987006139BB /* Hotel California.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898D1EE92987006139BB /* Hotel California.mp3 */; };
@@ -75,6 +76,7 @@
 		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
 		6B4095AD1ECEA13A00230FE1 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		6B6942E41EEA7A7500A6B4AB /* mybro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mybro.mp3; sourceTree = "<group>"; };
 		6B7689891EE926CF006139BB /* MusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
 		6B76898C1EE92987006139BB /* ncssn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ncssn.mp3; sourceTree = "<group>"; };
 		6B76898D1EE92987006139BB /* Hotel California.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hotel California.mp3"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		6B76898B1EE92965006139BB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6B6942E41EEA7A7500A6B4AB /* mybro.mp3 */,
 				6B76898C1EE92987006139BB /* ncssn.mp3 */,
 				6B76898D1EE92987006139BB /* Hotel California.mp3 */,
 			);
@@ -346,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6942E51EEA7A7500A6B4AB /* mybro.mp3 in Resources */,
 				6B76898E1EE92987006139BB /* ncssn.mp3 in Resources */,
 				6B76898F1EE92987006139BB /* Hotel California.mp3 in Resources */,
 				6B191F051ECD4E0F00C21065 /* LaunchScreen.storyboard in Resources */,

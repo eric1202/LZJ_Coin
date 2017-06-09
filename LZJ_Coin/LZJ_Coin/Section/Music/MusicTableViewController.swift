@@ -60,27 +60,23 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        //        if(player.isPlaying){
-        //            player.stop()
-        //            player.currentTime=0;
-        //        }
-
         let url = datas[indexPath.row]
 
         let path = Bundle.main.url(forResource: url, withExtension: nil)
 
-        //        let pathURL = URL.init(fileURLWithPath: path!)
-        //
-        //        let player = try! AVAudioPlayer.init(contentsOf: path!)
-        //
-        //        player.numberOfLoops = 100;
-        //        player.play()
-
         if let player1 = AppHelper.sharedInstance.player {
-            player1.insert(AVPlayerItem.init(url: path!), after: player1.items().last)
+
+            player1.pause()
+
+
+            if let firstItem = player1.items().first{
+                player1.insert(AVPlayerItem.init(url: path!), after:firstItem)
+                player1.remove(firstItem)
+            }else{
+                player1.insert(AVPlayerItem.init(url: path!), after: player1.items().first)
+            }
 
             player1.play()
-            player1.rate = 2
         }else{
             print("no player")
         }
