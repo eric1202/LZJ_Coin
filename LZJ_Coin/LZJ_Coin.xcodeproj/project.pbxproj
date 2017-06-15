@@ -28,6 +28,7 @@
 		6B76898E1EE92987006139BB /* ncssn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898C1EE92987006139BB /* ncssn.mp3 */; };
 		6B76898F1EE92987006139BB /* Hotel California.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B76898D1EE92987006139BB /* Hotel California.mp3 */; };
 		6B97617D1ED6A67C001E11B4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */; };
+		6B9A87B51EF1476000CF5383 /* dingwei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A87B41EF1476000CF5383 /* dingwei.gpx */; };
 		6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		6B76898C1EE92987006139BB /* ncssn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ncssn.mp3; sourceTree = "<group>"; };
 		6B76898D1EE92987006139BB /* Hotel California.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hotel California.mp3"; sourceTree = "<group>"; };
 		6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		6B9A87B41EF1476000CF5383 /* dingwei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dingwei.gpx; sourceTree = "<group>"; };
 		6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuBiCoin.swift; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				6B6942E41EEA7A7500A6B4AB /* mybro.mp3 */,
 				6B76898C1EE92987006139BB /* ncssn.mp3 */,
 				6B76898D1EE92987006139BB /* Hotel California.mp3 */,
+				6B9A87B41EF1476000CF5383 /* dingwei.gpx */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				6B191F021ECD4E0F00C21065 /* Assets.xcassets in Resources */,
 				6B3A95811ECD57A100A84749 /* Podfile in Resources */,
 				6B191F001ECD4E0F00C21065 /* Main.storyboard in Resources */,
+				6B9A87B51EF1476000CF5383 /* dingwei.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

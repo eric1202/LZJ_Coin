@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LZJ_Coin/Resource/dingwei.gpx">
+   </FileRef>
+   <FileRef
       location = "group:LZJ_Coin.xcodeproj">
    </FileRef>
    <FileRef
