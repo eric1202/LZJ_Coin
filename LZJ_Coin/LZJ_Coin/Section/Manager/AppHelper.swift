@@ -31,7 +31,7 @@ class AppHelper: NSObject {
         }
         if (player.items().count == 1){
             //add items
-            let items = ["Hotel California.mp3","mybro.mp3","ncssn.mp3"]
+            let items = ["Hotel California.mp3","好兄弟.mp3","你曾是少年.mp3"]
 
             for i in items {
                 let path = Bundle.main.url(forResource: i, withExtension: nil)

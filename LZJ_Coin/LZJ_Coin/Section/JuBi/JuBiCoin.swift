@@ -13,6 +13,7 @@ class JuBiCoin: NSObject {
         case IFC = "ifc"
         case DOGE = "doge"
         case XRP = "xrp"
+        case BTS = "bts"
     }
 
     var highPrice = 0.0

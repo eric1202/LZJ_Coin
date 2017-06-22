@@ -59,7 +59,7 @@
                                 <segments>
                                     <segment title="ltc"/>
                                     <segment title="ifc"/>
-                                    <segment title="doge"/>
+                                    <segment title="BTS"/>
                                     <segment title="xrp"/>
                                 </segments>
                                 <color key="tintColor" red="0.86274509803921573" green="0.96862745098039216" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,7 +128,7 @@
                         <color key="backgroundColor" red="0.50588235290000005" green="0.57254901960000004" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.50588235290000005" green="0.57254901960000004" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="2Tj-nY-zbC" rowHeight="73" style="IBUITableViewCellStyleDefault" id="UWi-e6-vSc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="2Tj-nY-zbC" rowHeight="73" style="IBUITableViewCellStyleDefault" id="UWi-e6-vSc">
                                 <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UWi-e6-vSc" id="294-LG-QSc">

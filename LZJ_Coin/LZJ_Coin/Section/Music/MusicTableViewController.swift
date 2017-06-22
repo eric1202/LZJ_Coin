@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 import AVFoundation
 class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
@@ -15,6 +16,8 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //setup the remote control
+        self.setupRemoteControl()
 
         //load local music
 
@@ -60,6 +63,13 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        //animaiton
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.contentView.alpha = 0.1;
+        UIView.animate(withDuration: 0.6) {
+            cell?.contentView.alpha = 1;
+        }
+
         let url = datas[indexPath.row]
 
         let path = Bundle.main.url(forResource: url, withExtension: nil)
@@ -80,31 +90,66 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
         }else{
             print("no player")
         }
-//        do {
+        //        do {
 
-//            player = try AVAudioPlayer(contentsOf: path!)
-//            guard let player = player else { return }
-//
-//            player.delegate = self
-//            player.prepareToPlay()
-//            player.play()
-//        } catch let error as NSError {
-//            print(error.description)
-//        }
+        //            player = try AVAudioPlayer(contentsOf: path!)
+        //            guard let player = player else { return }
+        //
+        //            player.delegate = self
+        //            player.prepareToPlay()
+        //            player.play()
+        //        } catch let error as NSError {
+        //            print(error.description)
+        //        }
 
     }
 
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if flag{
             print("*******audioPlayerDidFinishPlaying****")
-            
+
         }
     }
-    
+
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
         if let e = error{
             print(e,"************")
         }
+    }
+
+    func setupRemoteControl(){
+        let remoteCenter = MPRemoteCommandCenter.shared()
+        remoteCenter.playCommand.isEnabled = true
+        remoteCenter.pauseCommand.isEnabled = true
+        remoteCenter.nextTrackCommand.isEnabled = true
+
+        MPMediaLibrary.requestAuthorization { (MPMediaLibraryAuthorizationStatus) in
+            print("MPMediaLibraryAuthorizationStatus: %zd", MPMediaLibraryAuthorizationStatus);
+
+        }
+
+        remoteCenter.pauseCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
+            self.player?.pause()
+            print("pauseCommand")
+
+            return MPRemoteCommandHandlerStatus.success
+
+        }
+
+        remoteCenter.playCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
+            print("playCommand")
+            self.player?.play()
+            return MPRemoteCommandHandlerStatus.success
+
+        }
+
+        remoteCenter.nextTrackCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
+            print("nextTrackCommand")
+            
+            return MPRemoteCommandHandlerStatus.success
+        }
+        //        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        UIApplication.shared.beginReceivingRemoteControlEvents()
     }
     
 }
