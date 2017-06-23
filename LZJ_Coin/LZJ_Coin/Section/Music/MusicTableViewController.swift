@@ -123,11 +123,6 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
         remoteCenter.pauseCommand.isEnabled = true
         remoteCenter.nextTrackCommand.isEnabled = true
 
-        MPMediaLibrary.requestAuthorization { (MPMediaLibraryAuthorizationStatus) in
-            print("MPMediaLibraryAuthorizationStatus: %zd", MPMediaLibraryAuthorizationStatus);
-
-        }
-
         remoteCenter.pauseCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
             self.player?.pause()
             print("pauseCommand")
