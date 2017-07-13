@@ -118,33 +118,35 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
     }
 
     func setupRemoteControl(){
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+
         let remoteCenter = MPRemoteCommandCenter.shared()
         remoteCenter.playCommand.isEnabled = true
         remoteCenter.pauseCommand.isEnabled = true
         remoteCenter.nextTrackCommand.isEnabled = true
 
+
         remoteCenter.pauseCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
             self.player?.pause()
             print("pauseCommand")
 
-            return MPRemoteCommandHandlerStatus.success
+            return .success
 
         }
 
         remoteCenter.playCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
             print("playCommand")
             self.player?.play()
-            return MPRemoteCommandHandlerStatus.success
+            return .success
 
         }
 
         remoteCenter.nextTrackCommand.addTarget { (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus in
             print("nextTrackCommand")
             
-            return MPRemoteCommandHandlerStatus.success
+            return .success
         }
         //        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-        UIApplication.shared.beginReceivingRemoteControlEvents()
     }
     
 }

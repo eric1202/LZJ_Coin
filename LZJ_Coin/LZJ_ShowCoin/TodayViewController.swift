@@ -9,7 +9,8 @@
 import UIKit
 import NotificationCenter
 import SwiftyJSON
-class TodayViewController: UIViewController, NCWidgetProviding {
+
+class TodayViewController: UIViewController, NCWidgetProviding{
         
     @IBOutlet weak var showLbl: UILabel!
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         showLbl.layer.cornerRadius = 5
         showLbl.backgroundColor = UIColor.white
         showLbl.text = "greetings! " + UIDevice.current.name + " ! " + dateformatter.string(from: date)
+
     }
 
     override func viewWillAppear(_ animated: Bool) {

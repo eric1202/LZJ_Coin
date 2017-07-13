@@ -11,6 +11,7 @@ pod 'HandyJSON'
 pod 'SnapKit', '~> 3.2.0'
 pod 'Bugly'
 pod 'Kingfisher'
+pod 'NVActivityIndicatorView'
 pod 'Then', '~> 2.1'
 end
 
@@ -19,4 +20,5 @@ pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.4'
 pod 'HandyJSON'
 pod 'Kingfisher'
+
 end

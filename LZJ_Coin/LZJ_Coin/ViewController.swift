@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 import SwiftyJSON
 import RxSwift
 class ViewController: UIViewController {
@@ -24,7 +25,11 @@ class ViewController: UIViewController {
         self.configUI()
         self.loadLitCoinData()
 
+
     }
+
+    
+
 
     //MARK: - UI
     func configUI() {
@@ -50,6 +55,8 @@ class ViewController: UIViewController {
         self.loadingView = UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
         self.loadingView!.center = self.view.center
         self.view.addSubview(self.loadingView!)
+
+
     }
 
     //MARK: - Event
@@ -98,7 +105,10 @@ class ViewController: UIViewController {
             }
         })
     }
-
-
+    
+    @IBAction func toUIShowList(_ sender: Any) {
+        self.navigationController?.pushViewController(LoadingViewController(), animated: true);
+    }
+    
 }
 

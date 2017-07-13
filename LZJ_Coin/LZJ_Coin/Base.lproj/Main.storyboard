@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rym-Hq-000">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rym-Hq-000">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Article View Controller-->
+        <scene sceneID="2bj-v6-w5I">
+            <objects>
+                <viewController id="6tD-x0-ryB" customClass="ArticleViewController" customModule="LZJ_Coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hRa-t0-5Ji"/>
+                        <viewControllerLayoutGuide type="bottom" id="OcU-Xq-4hQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qo4-3T-p1A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QnV-je-tPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="-508"/>
+        </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -96,17 +115,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="Tkc-PT-aXJ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="D9Y-g1-54F">
-                            <connections>
-                                <segue destination="c1J-Qg-FUe" kind="show" id="2al-sW-ndl"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="more" style="plain" id="30d-gR-Cbh">
-                            <color key="tintColor" red="0.50588235290000005" green="0.76078431369999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="ci2-1X-P7u" kind="show" id="chW-yB-55n"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="play" id="D9Y-g1-54F">
+                                <connections>
+                                    <segue destination="c1J-Qg-FUe" kind="show" id="2al-sW-ndl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Article" id="pWk-oc-VyY">
+                                <connections>
+                                    <segue destination="6tD-x0-ryB" kind="show" id="qwu-Ub-eGe"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem title="More" style="done" id="30d-gR-Cbh">
+                                <color key="tintColor" red="0.50588235290000005" green="0.76078431369999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="ci2-1X-P7u" kind="show" id="chW-yB-55n"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="UI" id="MT8-8k-cLK">
+                                <connections>
+                                    <action selector="toUIShowList:" destination="BYZ-38-t0r" id="Q0i-tS-Z40"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="bitLbl" destination="dka-un-g0A" id="yO5-ee-fqF"/>
@@ -116,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="862" y="139"/>
         </scene>
         <!--Music-->
         <scene sceneID="mgk-Wb-5fS">
