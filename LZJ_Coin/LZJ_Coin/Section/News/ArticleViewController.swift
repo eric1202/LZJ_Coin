@@ -26,7 +26,7 @@ class ArticleViewController: UIViewController {
             textView.font = UIFont.systemFont(ofSize: 16)
             textView.contentInset = UIEdgeInsetsMake(2, 2, 2, 2)
             textView.isDirectionalLockEnabled = true
-            textView.backgroundColor = #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)
+            textView.backgroundColor = UIColor().hexStringToUIColor(hex: MAINCOLOR.first.rawValue)
 
             guard let data :Dictionary = result["data"] as! Dictionary<String,AnyObject> else {return}
             let t = data["content"] as? String

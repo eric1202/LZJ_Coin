@@ -189,6 +189,7 @@
 		6B9A87B51EF1476000CF5383 /* dingwei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A87B41EF1476000CF5383 /* dingwei.gpx */; };
 		6BAAA98C1F09EDBB003FAE68 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */; };
 		6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */; };
+		6BE918601F1F49BF006AB298 /* GravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9185F1F1F49BF006AB298 /* GravityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -402,6 +403,7 @@
 		6B9A87B41EF1476000CF5383 /* dingwei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dingwei.gpx; sourceTree = "<group>"; };
 		6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuBiCoin.swift; sourceTree = "<group>"; };
+		6BE9185F1F1F49BF006AB298 /* GravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.release.xcconfig"; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 		6B3A957B1ECD4FD800A84749 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				6BE9185E1F1F49AA006AB298 /* Gravity */,
 				6B4C1B561F0383B7008DAE09 /* UIShow */,
 				6B6942E11EEA3E9600A6B4AB /* Manager */,
 				6B7689881EE92603006139BB /* Music */,
@@ -733,6 +736,14 @@
 				6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */,
 			);
 			path = JuBi;
+			sourceTree = "<group>";
+		};
+		6BE9185E1F1F49AA006AB298 /* Gravity */ = {
+			isa = PBXGroup;
+			children = (
+				6BE9185F1F1F49BF006AB298 /* GravityViewController.swift */,
+			);
+			path = Gravity;
 			sourceTree = "<group>";
 		};
 		96DD4470BDB8DF6E2A18592E /* Frameworks */ = {
@@ -1081,7 +1092,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DC02D95B666CF2B30B42543C /* [CP] Check Pods Manifest.lock */ = {
@@ -1096,7 +1107,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1117,6 +1128,7 @@
 				6B4C1B581F0383D6008DAE09 /* LoadingViewController.swift in Sources */,
 				6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */,
 				6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */,
+				6BE918601F1F49BF006AB298 /* GravityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

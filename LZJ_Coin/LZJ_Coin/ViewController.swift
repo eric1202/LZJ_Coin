@@ -26,9 +26,7 @@ class ViewController: UIViewController {
         self.loadLitCoinData()
 
 
-    }
-
-    
+    }  
 
 
     //MARK: - UI

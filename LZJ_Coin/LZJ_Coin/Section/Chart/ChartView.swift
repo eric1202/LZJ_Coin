@@ -55,7 +55,7 @@ class CoinChartView: UIView {
         let lineChartDataSet = LineChartDataSet(values: dataEntries, label: "折线图")
         lineChartDataSet.drawCirclesEnabled = false
 //        lineChartDataSet.circleColors = [UIColor.init(red: 220/255.0, green: 247/255.0, blue: 161/255.0, alpha: 1)];
-        lineChartDataSet.colors = [UIColor.init(red: 220/255.0, green: 247/255.0, blue: 161/255.0, alpha: 1)];
+        lineChartDataSet.colors = [UIColor().hexStringToUIColor(hex: MAINCOLOR.second.rawValue)] //[UIColor.init(red: 220/255.0, green: 247/255.0, blue: 161/255.0, alpha: 1)];
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
 
 //        lineChartData.addDataSet(lineChartDataSet)

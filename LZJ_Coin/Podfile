@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '8.0'
 use_frameworks!
 target 'LZJ_Coin' do
 pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
@@ -13,6 +13,7 @@ pod 'Bugly'
 pod 'Kingfisher'
 pod 'NVActivityIndicatorView'
 pod 'Then', '~> 2.1'
+pod 'LeanCloud','~> 10.1.0'
 end
 
 target 'LZJ_ShowCoin'  do

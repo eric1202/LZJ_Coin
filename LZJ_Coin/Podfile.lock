@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.4.0)
+  - Alamofire (4.5.0)
   - Bugly (2.4.8)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
@@ -7,12 +7,18 @@ PODS:
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
-  - HandyJSON (1.7.1)
-  - Kingfisher (3.10.1)
-  - NVActivityIndicatorView (3.6.1)
-  - RxCocoa (3.5.0):
-    - RxSwift (~> 3.4)
-  - RxSwift (3.5.0)
+  - HandyJSON (1.7.2)
+  - Kingfisher (3.10.4)
+  - LeanCloud (10.1.0):
+    - LeanCloud/Storage (= 10.1.0)
+  - LeanCloud/Storage (10.1.0):
+    - Alamofire (~> 4.5)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
   - SnapKit (3.2.0)
   - SwiftyJSON (3.1.4)
   - Then (2.1.0)
@@ -24,6 +30,7 @@ DEPENDENCIES:
   - Charts
   - HandyJSON
   - Kingfisher
+  - LeanCloud (~> 10.1.0)
   - NVActivityIndicatorView
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
@@ -37,23 +44,24 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ChameleonFramework:
-    :commit: acc480fbe023c6e5fe40f68593f4a70a8c4c7ad5
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
     :git: https://github.com/ViccAlexander/Chameleon.git
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Bugly: da3c02408c14838d498429320545a8e439392978
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
-  HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
-  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
-  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
-  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
-  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  HandyJSON: e7ad0483005826baba1d1c251cd98d0aa8bd8cce
+  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
+  LeanCloud: 2a6ac9da4fcf4b6b26f519d05a31998ddc59223a
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 5811109f6c460c757005760e3cdc83ec35817f3a
+PODFILE CHECKSUM: 6ab2f19aa12e3475dbfe31da01c725b22f13ab8b
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
