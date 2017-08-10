@@ -14,7 +14,16 @@ pod 'Kingfisher'
 pod 'NVActivityIndicatorView'
 pod 'Then', '~> 2.1'
 pod 'LeanCloud','~> 10.1.0'
+
+target 'LZJ_CoinTests'  do
+    pod 'Quick'
+    pod 'Nimble'
 end
+end
+
+
+
+
 
 target 'LZJ_ShowCoin'  do
 pod 'SwiftyJSON'

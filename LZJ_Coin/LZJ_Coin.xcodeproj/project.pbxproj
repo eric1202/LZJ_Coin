@@ -10,6 +10,11 @@
 		383C14D73A3BD2D788703634 /* Pods_LZJ_Coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */; };
 		400FC928AD668729A0203A59 /* Pods_LZJ_ShowCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5584BF9BB5510CCE3E5182EC /* Pods_LZJ_ShowCoin.framework */; };
 		6B00665A1EF25AE5004DFA87 /* 成都-赵雷-成都.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B0066591EF25AE5004DFA87 /* 成都-赵雷-成都.mp3 */; };
+		6B0CA4451F3BFF5D001643D9 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0CA4401F3BFF2B001643D9 /* GPUImage.framework */; };
+		6B0CA4471F3BFFEC001643D9 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B0CA4401F3BFF2B001643D9 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B0CA6051F3C0280001643D9 /* GPUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CA6041F3C0280001643D9 /* GPUViewController.swift */; };
+		6B0CA6081F3C120B001643D9 /* food1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CA6071F3C11A5001643D9 /* food1.jpg */; };
+		6B0CA6091F3C120E001643D9 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CA6061F3C077F001643D9 /* 1024.png */; };
 		6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */; };
 		6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B191EFC1ECD4E0F00C21065 /* ViewController.swift */; };
 		6B191F001ECD4E0F00C21065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B191EFE1ECD4E0F00C21065 /* Main.storyboard */; };
@@ -187,12 +192,49 @@
 		6B908A0C1EFBA5B100D7B7F8 /* 146-sound-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B90897A1EFBA5B000D7B7F8 /* 146-sound-waves.png */; };
 		6B97617D1ED6A67C001E11B4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */; };
 		6B9A87B51EF1476000CF5383 /* dingwei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A87B41EF1476000CF5383 /* dingwei.gpx */; };
+		6BA88CB51F3057B300376FD5 /* LZJ_CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA88CB41F3057B300376FD5 /* LZJ_CoinTests.swift */; };
 		6BAAA98C1F09EDBB003FAE68 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */; };
 		6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */; };
 		6BE918601F1F49BF006AB298 /* GravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9185F1F1F49BF006AB298 /* GravityViewController.swift */; };
+		730A024D94A48D9A5E4C80D6 /* Pods_LZJ_Coin_LZJ_CoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D877CA550B5A3D6005BA802 /* Pods_LZJ_Coin_LZJ_CoinTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6B0CA43B1F3BFF2B001643D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CAB1C39A9D8006DF678;
+			remoteInfo = GPUImage_macOS;
+		};
+		6B0CA43D1F3BFF2B001643D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CB51C39A9D8006DF678;
+			remoteInfo = GPUImageTests_macOS;
+		};
+		6B0CA43F1F3BFF2B001643D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
+		6B0CA4411F3BFF2B001643D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
+			remoteInfo = GPUImageTests_iOS;
+		};
+		6B0CA4431F3BFF45001643D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9E34E81E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
 		6B3A95931ECD891E00A84749 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B191EEF1ECD4E0F00C21065 /* Project object */;
@@ -200,9 +242,26 @@
 			remoteGlobalIDString = 6B3A95881ECD891E00A84749;
 			remoteInfo = LZJ_ShowCoin;
 		};
+		6BA88CB71F3057B300376FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B191EEF1ECD4E0F00C21065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B191EF61ECD4E0F00C21065;
+			remoteInfo = LZJ_Coin;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6B0CA4461F3BFF7A001643D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6B0CA4471F3BFFEC001643D9 /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B3A95991ECD891E00A84749 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,9 +276,451 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15475CB0B5D1D76324E73D42 /* Pods-LZJ_Coin-LZJ_CoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin-LZJ_CoinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin-LZJ_CoinTests/Pods-LZJ_Coin-LZJ_CoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D877CA550B5A3D6005BA802 /* Pods_LZJ_Coin_LZJ_CoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin_LZJ_CoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5584BF9BB5510CCE3E5182EC /* Pods_LZJ_ShowCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_ShowCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin.release.xcconfig"; sourceTree = "<group>"; };
 		6B0066591EF25AE5004DFA87 /* 成都-赵雷-成都.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "成都-赵雷-成都.mp3"; sourceTree = "<group>"; };
+		6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		6B0CA4491F3C014A001643D9 /* BasicOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
+		6B0CA44A1F3C014A001643D9 /* CameraConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConversion.swift; sourceTree = "<group>"; };
+		6B0CA44B1F3C014A001643D9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		6B0CA44C1F3C014A001643D9 /* FillMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillMode.swift; sourceTree = "<group>"; };
+		6B0CA44D1F3C014A001643D9 /* Framebuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framebuffer.swift; sourceTree = "<group>"; };
+		6B0CA44E1F3C014A001643D9 /* FramebufferCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramebufferCache.swift; sourceTree = "<group>"; };
+		6B0CA44F1F3C014A001643D9 /* ImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
+		6B0CA4501F3C014A001643D9 /* ImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrientation.swift; sourceTree = "<group>"; };
+		6B0CA4521F3C014A001643D9 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		6B0CA4531F3C014A001643D9 /* GPUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
+		6B0CA4541F3C014A001643D9 /* MovieInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInput.swift; sourceTree = "<group>"; };
+		6B0CA4551F3C014A001643D9 /* MovieOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOutput.swift; sourceTree = "<group>"; };
+		6B0CA4561F3C014A001643D9 /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
+		6B0CA4571F3C014A001643D9 /* PictureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInput.swift; sourceTree = "<group>"; };
+		6B0CA4581F3C014A001643D9 /* PictureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOutput.swift; sourceTree = "<group>"; };
+		6B0CA4591F3C014A001643D9 /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		6B0CA45B1F3C014A001643D9 /* GLUTRenderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLUTRenderWindow.swift; sourceTree = "<group>"; };
+		6B0CA45C1F3C014A001643D9 /* OpenGLContext-RPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenGLContext-RPi.swift"; sourceTree = "<group>"; };
+		6B0CA45D1F3C014A001643D9 /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
+		6B0CA45E1F3C014A001643D9 /* RPiRenderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPiRenderWindow.swift; sourceTree = "<group>"; };
+		6B0CA45F1F3C014A001643D9 /* V4LCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V4LCamera.swift; sourceTree = "<group>"; };
+		6B0CA4601F3C014A001643D9 /* v4lfuncs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = v4lfuncs.c; sourceTree = "<group>"; };
+		6B0CA4611F3C014A001643D9 /* v4lfuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = v4lfuncs.h; sourceTree = "<group>"; };
+		6B0CA4631F3C014A001643D9 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		6B0CA4641F3C014A001643D9 /* MovieInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInput.swift; sourceTree = "<group>"; };
+		6B0CA4651F3C014A001643D9 /* MovieOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOutput.swift; sourceTree = "<group>"; };
+		6B0CA4661F3C014A001643D9 /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
+		6B0CA4671F3C014A001643D9 /* PictureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInput.swift; sourceTree = "<group>"; };
+		6B0CA4681F3C014A001643D9 /* PictureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOutput.swift; sourceTree = "<group>"; };
+		6B0CA4691F3C014A001643D9 /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		6B0CA46A1F3C014A001643D9 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		6B0CA46B1F3C014A001643D9 /* OpenGLContext_Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext_Shared.swift; sourceTree = "<group>"; };
+		6B0CA46C1F3C014A001643D9 /* OpenGLRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLRendering.swift; sourceTree = "<group>"; };
+		6B0CA46D1F3C014A001643D9 /* OperationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
+		6B0CA46F1F3C014A001643D9 /* AdaptiveThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveThreshold.swift; sourceTree = "<group>"; };
+		6B0CA4701F3C014A001643D9 /* AddBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlend.swift; sourceTree = "<group>"; };
+		6B0CA4711F3C014A001643D9 /* AlphaBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaBlend.swift; sourceTree = "<group>"; };
+		6B0CA4721F3C014A001643D9 /* AmatorkaFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmatorkaFilter.swift; sourceTree = "<group>"; };
+		6B0CA4731F3C014A001643D9 /* AverageColorExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageColorExtractor.swift; sourceTree = "<group>"; };
+		6B0CA4741F3C014A001643D9 /* AverageLuminanceExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageLuminanceExtractor.swift; sourceTree = "<group>"; };
+		6B0CA4751F3C014A001643D9 /* AverageLuminanceThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageLuminanceThreshold.swift; sourceTree = "<group>"; };
+		6B0CA4761F3C014A001643D9 /* BilateralBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilateralBlur.swift; sourceTree = "<group>"; };
+		6B0CA4771F3C014A001643D9 /* BoxBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlur.swift; sourceTree = "<group>"; };
+		6B0CA4781F3C014A001643D9 /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4791F3C014A001643D9 /* BulgeDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgeDistortion.swift; sourceTree = "<group>"; };
+		6B0CA47A1F3C014A001643D9 /* CannyEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannyEdgeDetection.swift; sourceTree = "<group>"; };
+		6B0CA47B1F3C014A001643D9 /* CGAColorspaceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAColorspaceFilter.swift; sourceTree = "<group>"; };
+		6B0CA47C1F3C014A001643D9 /* ChromaKeyBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyBlend.swift; sourceTree = "<group>"; };
+		6B0CA47D1F3C014A001643D9 /* ChromaKeying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeying.swift; sourceTree = "<group>"; };
+		6B0CA47E1F3C014A001643D9 /* CircleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGenerator.swift; sourceTree = "<group>"; };
+		6B0CA47F1F3C014A001643D9 /* ClosingFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingFilter.swift; sourceTree = "<group>"; };
+		6B0CA4801F3C014A001643D9 /* ColorBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlend.swift; sourceTree = "<group>"; };
+		6B0CA4811F3C014A001643D9 /* ColorBurnBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBurnBlend.swift; sourceTree = "<group>"; };
+		6B0CA4821F3C014A001643D9 /* ColorDodgeBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDodgeBlend.swift; sourceTree = "<group>"; };
+		6B0CA4831F3C014A001643D9 /* ColorInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInversion.swift; sourceTree = "<group>"; };
+		6B0CA4841F3C014A001643D9 /* ColorLocalBinaryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLocalBinaryPattern.swift; sourceTree = "<group>"; };
+		6B0CA4851F3C014A001643D9 /* ColorMatrixFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMatrixFilter.swift; sourceTree = "<group>"; };
+		6B0CA4861F3C014A001643D9 /* ColourFASTFeatureDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourFASTFeatureDetection.swift; sourceTree = "<group>"; };
+		6B0CA4871F3C014A001643D9 /* ContrastAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4881F3C014A001643D9 /* Convolution3x3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convolution3x3.swift; sourceTree = "<group>"; };
+		6B0CA4891F3C014A001643D9 /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		6B0CA48A1F3C014A001643D9 /* CrosshairGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosshairGenerator.swift; sourceTree = "<group>"; };
+		6B0CA48B1F3C014A001643D9 /* Crosshatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosshatch.swift; sourceTree = "<group>"; };
+		6B0CA48C1F3C014A001643D9 /* DarkenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkenBlend.swift; sourceTree = "<group>"; };
+		6B0CA48D1F3C014A001643D9 /* DifferenceBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceBlend.swift; sourceTree = "<group>"; };
+		6B0CA48E1F3C014A001643D9 /* Dilation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dilation.swift; sourceTree = "<group>"; };
+		6B0CA48F1F3C014A001643D9 /* DissolveBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissolveBlend.swift; sourceTree = "<group>"; };
+		6B0CA4901F3C014A001643D9 /* DivideBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideBlend.swift; sourceTree = "<group>"; };
+		6B0CA4911F3C014A001643D9 /* EmbossFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossFilter.swift; sourceTree = "<group>"; };
+		6B0CA4921F3C014A001643D9 /* Erosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erosion.swift; sourceTree = "<group>"; };
+		6B0CA4931F3C014A001643D9 /* ExclusionBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionBlend.swift; sourceTree = "<group>"; };
+		6B0CA4941F3C014A001643D9 /* ExposureAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4951F3C014A001643D9 /* FalseColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseColor.swift; sourceTree = "<group>"; };
+		6B0CA4961F3C014A001643D9 /* GammaAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4971F3C014A001643D9 /* GaussianBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianBlur.swift; sourceTree = "<group>"; };
+		6B0CA4981F3C014A001643D9 /* GlassSphereRefraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassSphereRefraction.swift; sourceTree = "<group>"; };
+		6B0CA4991F3C014A001643D9 /* Halftone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halftone.swift; sourceTree = "<group>"; };
+		6B0CA49A1F3C014A001643D9 /* HardLightBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardLightBlend.swift; sourceTree = "<group>"; };
+		6B0CA49B1F3C014A001643D9 /* HarrisCornerDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarrisCornerDetector.swift; sourceTree = "<group>"; };
+		6B0CA49C1F3C014A001643D9 /* Haze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haze.swift; sourceTree = "<group>"; };
+		6B0CA49D1F3C014A001643D9 /* HighlightAndShadowTint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightAndShadowTint.swift; sourceTree = "<group>"; };
+		6B0CA49E1F3C014A001643D9 /* HighlightsAndShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsAndShadows.swift; sourceTree = "<group>"; };
+		6B0CA49F1F3C014A001643D9 /* HighPassFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighPassFilter.swift; sourceTree = "<group>"; };
+		6B0CA4A01F3C014A001643D9 /* Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
+		6B0CA4A11F3C014A001643D9 /* HistogramDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramDisplay.swift; sourceTree = "<group>"; };
+		6B0CA4A21F3C014A001643D9 /* HistogramEqualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramEqualization.swift; sourceTree = "<group>"; };
+		6B0CA4A31F3C014A001643D9 /* HueAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4A41F3C014A001643D9 /* HueBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueBlend.swift; sourceTree = "<group>"; };
+		6B0CA4A51F3C014A001643D9 /* ImageBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBuffer.swift; sourceTree = "<group>"; };
+		6B0CA4A61F3C014A001643D9 /* iOSBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBlur.swift; sourceTree = "<group>"; };
+		6B0CA4A71F3C014A001643D9 /* KuwaharaFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuwaharaFilter.swift; sourceTree = "<group>"; };
+		6B0CA4A81F3C014A001643D9 /* KuwaharaRadius3Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuwaharaRadius3Filter.swift; sourceTree = "<group>"; };
+		6B0CA4A91F3C014A001643D9 /* LanczosResampling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanczosResampling.swift; sourceTree = "<group>"; };
+		6B0CA4AA1F3C014A001643D9 /* Laplacian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laplacian.swift; sourceTree = "<group>"; };
+		6B0CA4AB1F3C014A001643D9 /* LevelsAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4AC1F3C014A001643D9 /* LightenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightenBlend.swift; sourceTree = "<group>"; };
+		6B0CA4AD1F3C014A001643D9 /* LinearBurnBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearBurnBlend.swift; sourceTree = "<group>"; };
+		6B0CA4AE1F3C014A001643D9 /* LineGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGenerator.swift; sourceTree = "<group>"; };
+		6B0CA4AF1F3C014A001643D9 /* LocalBinaryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBinaryPattern.swift; sourceTree = "<group>"; };
+		6B0CA4B01F3C014A001643D9 /* LookupFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
+		6B0CA4B21F3C014A001643D9 /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
+		6B0CA4B31F3C014A001643D9 /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
+		6B0CA4B41F3C014A001643D9 /* lookup_miss_etikate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_miss_etikate.png; sourceTree = "<group>"; };
+		6B0CA4B51F3C014A001643D9 /* lookup_soft_elegance_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_1.png; sourceTree = "<group>"; };
+		6B0CA4B61F3C014A001643D9 /* lookup_soft_elegance_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_2.png; sourceTree = "<group>"; };
+		6B0CA4B71F3C014A001643D9 /* LowPassFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowPassFilter.swift; sourceTree = "<group>"; };
+		6B0CA4B81F3C014A001643D9 /* Luminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luminance.swift; sourceTree = "<group>"; };
+		6B0CA4B91F3C014A001643D9 /* LuminanceRangeReduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceRangeReduction.swift; sourceTree = "<group>"; };
+		6B0CA4BA1F3C014A001643D9 /* LuminanceThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceThreshold.swift; sourceTree = "<group>"; };
+		6B0CA4BB1F3C014A001643D9 /* LuminosityBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminosityBlend.swift; sourceTree = "<group>"; };
+		6B0CA4BC1F3C014A001643D9 /* MedianFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianFilter.swift; sourceTree = "<group>"; };
+		6B0CA4BD1F3C014A001643D9 /* MissEtikateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissEtikateFilter.swift; sourceTree = "<group>"; };
+		6B0CA4BE1F3C014A001643D9 /* MonochromeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonochromeFilter.swift; sourceTree = "<group>"; };
+		6B0CA4BF1F3C014A001643D9 /* MotionBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBlur.swift; sourceTree = "<group>"; };
+		6B0CA4C01F3C014A001643D9 /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
+		6B0CA4C11F3C014A001643D9 /* MultiplyBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyBlend.swift; sourceTree = "<group>"; };
+		6B0CA4C21F3C014A001643D9 /* NobleCornerDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobleCornerDetector.swift; sourceTree = "<group>"; };
+		6B0CA4C31F3C014A001643D9 /* NormalBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBlend.swift; sourceTree = "<group>"; };
+		6B0CA4C41F3C014A001643D9 /* OpacityAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4C51F3C014A001643D9 /* OpeningFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningFilter.swift; sourceTree = "<group>"; };
+		6B0CA4C61F3C014A001643D9 /* OverlayBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBlend.swift; sourceTree = "<group>"; };
+		6B0CA4C71F3C014A001643D9 /* PinchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchDistortion.swift; sourceTree = "<group>"; };
+		6B0CA4C81F3C014A001643D9 /* Pixellate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixellate.swift; sourceTree = "<group>"; };
+		6B0CA4C91F3C014A001643D9 /* PolarPixellate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarPixellate.swift; sourceTree = "<group>"; };
+		6B0CA4CA1F3C014A001643D9 /* PolkaDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolkaDot.swift; sourceTree = "<group>"; };
+		6B0CA4CB1F3C014A001643D9 /* Posterize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posterize.swift; sourceTree = "<group>"; };
+		6B0CA4CC1F3C014A001643D9 /* PrewittEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewittEdgeDetection.swift; sourceTree = "<group>"; };
+		6B0CA4CD1F3C014A001643D9 /* RGBAdjustmentFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBAdjustmentFilter.swift; sourceTree = "<group>"; };
+		6B0CA4CE1F3C014A001643D9 /* SaturationAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationAdjustment.swift; sourceTree = "<group>"; };
+		6B0CA4CF1F3C014A001643D9 /* SaturationBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationBlend.swift; sourceTree = "<group>"; };
+		6B0CA4D01F3C014A001643D9 /* ScreenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBlend.swift; sourceTree = "<group>"; };
+		6B0CA4D11F3C014A001643D9 /* SepiaToneFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaToneFilter.swift; sourceTree = "<group>"; };
+		6B0CA4D31F3C014A001643D9 /* AdaptiveThreshold_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AdaptiveThreshold_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4D41F3C014A001643D9 /* AdaptiveThreshold_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AdaptiveThreshold_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4D51F3C014A001643D9 /* AddBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AddBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4D61F3C014A001643D9 /* AddBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AddBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4D71F3C014A001643D9 /* AlphaBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4D81F3C014A001643D9 /* AlphaBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4D91F3C014A001643D9 /* AlphaTest_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaTest_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4DA1F3C014A001643D9 /* AlphaTest_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaTest_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4DB1F3C014A001643D9 /* AverageColor.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor.vsh; sourceTree = "<group>"; };
+		6B0CA4DC1F3C014A001643D9 /* AverageColor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4DD1F3C014A001643D9 /* AverageColor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4DE1F3C014A001643D9 /* AverageLuminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageLuminance_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4DF1F3C014A001643D9 /* AverageLuminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageLuminance_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4E01F3C014A001643D9 /* BilateralBlur.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur.vsh; sourceTree = "<group>"; };
+		6B0CA4E11F3C014A001643D9 /* BilateralBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4E21F3C014A001643D9 /* BilateralBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4E31F3C014A001643D9 /* Brightness_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Brightness_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4E41F3C014A001643D9 /* Brightness_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Brightness_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4E51F3C014A001643D9 /* BulgeDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BulgeDistortion_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4E61F3C014A001643D9 /* BulgeDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BulgeDistortion_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4E71F3C014A001643D9 /* CGAColorspace_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CGAColorspace_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4E81F3C014A001643D9 /* CGAColorspace_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CGAColorspace_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4E91F3C014A001643D9 /* ChromaKey_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKey_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4EA1F3C014A001643D9 /* ChromaKey_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKey_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4EB1F3C014A001643D9 /* ChromaKeyBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKeyBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4EC1F3C014A001643D9 /* ChromaKeyBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKeyBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4ED1F3C014A001643D9 /* Circle.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle.vsh; sourceTree = "<group>"; };
+		6B0CA4EE1F3C014A001643D9 /* Circle_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4EF1F3C014A001643D9 /* Circle_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4F01F3C014A001643D9 /* ColorBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4F11F3C014A001643D9 /* ColorBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4F21F3C014A001643D9 /* ColorBurnBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBurnBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4F31F3C014A001643D9 /* ColorBurnBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBurnBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4F41F3C014A001643D9 /* ColorDodgeBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorDodgeBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4F51F3C014A001643D9 /* ColorDodgeBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorDodgeBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4F61F3C014A001643D9 /* ColorInvert_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorInvert_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4F71F3C014A001643D9 /* ColorInvert_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorInvert_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4F81F3C014A001643D9 /* ColorLocalBinaryPattern_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorLocalBinaryPattern_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4F91F3C014A001643D9 /* ColorLocalBinaryPattern_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorLocalBinaryPattern_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4FA1F3C014A001643D9 /* ColorMatrix_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorMatrix_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4FB1F3C014A001643D9 /* ColorMatrix_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorMatrix_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4FC1F3C014A001643D9 /* ColorSwizzling_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorSwizzling_GL.fsh; sourceTree = "<group>"; };
+		6B0CA4FD1F3C014A001643D9 /* ColorSwizzling_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorSwizzling_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA4FE1F3C014A001643D9 /* ColourFASTDecriptor.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor.vsh; sourceTree = "<group>"; };
+		6B0CA4FF1F3C014A001643D9 /* ColourFASTDecriptor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5001F3C014A001643D9 /* ColourFASTDecriptor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5011F3C014A001643D9 /* Contrast_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Contrast_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5021F3C014A001643D9 /* Contrast_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Contrast_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5031F3C014A001643D9 /* ConvertedShaders_GL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedShaders_GL.swift; sourceTree = "<group>"; };
+		6B0CA5041F3C014A001643D9 /* ConvertedShaders_GLES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedShaders_GLES.swift; sourceTree = "<group>"; };
+		6B0CA5051F3C014A001643D9 /* Convolution3x3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Convolution3x3_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5061F3C014A001643D9 /* Convolution3x3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Convolution3x3_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5071F3C014A001643D9 /* Crosshair.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair.vsh; sourceTree = "<group>"; };
+		6B0CA5081F3C014A001643D9 /* Crosshair_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5091F3C014A001643D9 /* Crosshair_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA50A1F3C014A001643D9 /* Crosshatch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshatch_GL.fsh; sourceTree = "<group>"; };
+		6B0CA50B1F3C014A001643D9 /* Crosshatch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshatch_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA50C1F3C014A001643D9 /* DarkenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DarkenBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA50D1F3C014A001643D9 /* DarkenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DarkenBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA50E1F3C014A001643D9 /* DifferenceBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DifferenceBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA50F1F3C014A001643D9 /* DifferenceBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DifferenceBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5101F3C014A001643D9 /* Dilation1_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation1_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5111F3C014A001643D9 /* Dilation1_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation1_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5121F3C014A001643D9 /* Dilation2_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation2_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5131F3C014A001643D9 /* Dilation2_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation2_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5141F3C014A001643D9 /* Dilation3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation3_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5151F3C014A001643D9 /* Dilation3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation3_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5161F3C014A001643D9 /* Dilation4_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation4_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5171F3C014A001643D9 /* Dilation4_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation4_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5181F3C014A001643D9 /* DirectionalNonMaximumSuppression_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalNonMaximumSuppression_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5191F3C014A001643D9 /* DirectionalNonMaximumSuppression_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalNonMaximumSuppression_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA51A1F3C014A001643D9 /* DirectionalSobelEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalSobelEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		6B0CA51B1F3C014A001643D9 /* DirectionalSobelEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalSobelEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA51C1F3C014A001643D9 /* DissolveBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DissolveBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA51D1F3C014A001643D9 /* DissolveBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DissolveBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA51E1F3C014A001643D9 /* DivideBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DivideBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA51F1F3C014A001643D9 /* DivideBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DivideBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5201F3C014A001643D9 /* Erosion1_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion1_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5211F3C014A001643D9 /* Erosion1_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion1_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5221F3C014A001643D9 /* Erosion2_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion2_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5231F3C014A001643D9 /* Erosion2_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion2_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5241F3C014A001643D9 /* Erosion3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion3_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5251F3C014A001643D9 /* Erosion3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion3_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5261F3C014A001643D9 /* Erosion4_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion4_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5271F3C014A001643D9 /* Erosion4_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion4_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5281F3C014A001643D9 /* ErosionDilation1.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation1.vsh; sourceTree = "<group>"; };
+		6B0CA5291F3C014A001643D9 /* ErosionDilation2.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation2.vsh; sourceTree = "<group>"; };
+		6B0CA52A1F3C014A001643D9 /* ErosionDilation3.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation3.vsh; sourceTree = "<group>"; };
+		6B0CA52B1F3C014A001643D9 /* ErosionDilation4.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation4.vsh; sourceTree = "<group>"; };
+		6B0CA52C1F3C014A001643D9 /* ExclusionBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ExclusionBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA52D1F3C014A001643D9 /* ExclusionBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ExclusionBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA52E1F3C014A001643D9 /* Exposure_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Exposure_GL.fsh; sourceTree = "<group>"; };
+		6B0CA52F1F3C014A001643D9 /* Exposure_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Exposure_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5301F3C014A001643D9 /* FalseColor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FalseColor_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5311F3C014A001643D9 /* FalseColor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FalseColor_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5321F3C014A001643D9 /* FiveInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FiveInput.vsh; sourceTree = "<group>"; };
+		6B0CA5331F3C014A001643D9 /* FourInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FourInput.vsh; sourceTree = "<group>"; };
+		6B0CA5341F3C014A001643D9 /* Gamma_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gamma_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5351F3C014A001643D9 /* Gamma_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gamma_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5361F3C014A001643D9 /* GlassSphere_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GlassSphere_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5371F3C014A001643D9 /* GlassSphere_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GlassSphere_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5381F3C014A001643D9 /* Halftone_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Halftone_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5391F3C014A001643D9 /* Halftone_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Halftone_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA53A1F3C014A001643D9 /* HardLightBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HardLightBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA53B1F3C014A001643D9 /* HardLightBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HardLightBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA53C1F3C014A001643D9 /* HarrisCornerDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HarrisCornerDetector_GL.fsh; sourceTree = "<group>"; };
+		6B0CA53D1F3C014A001643D9 /* HarrisCornerDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HarrisCornerDetector_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA53E1F3C014A001643D9 /* Haze_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Haze_GL.fsh; sourceTree = "<group>"; };
+		6B0CA53F1F3C014A001643D9 /* Haze_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Haze_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5401F3C014A001643D9 /* HighlightShadow_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadow_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5411F3C014A001643D9 /* HighlightShadow_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadow_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5421F3C014A001643D9 /* HighlightShadowTint_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadowTint_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5431F3C014A001643D9 /* HighlightShadowTint_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadowTint_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5441F3C014A001643D9 /* HistogramAccumulation_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramAccumulation_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5451F3C014A001643D9 /* HistogramAccumulation_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramAccumulation_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5461F3C014A001643D9 /* HistogramBlueSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramBlueSampling.vsh; sourceTree = "<group>"; };
+		6B0CA5471F3C014A001643D9 /* HistogramDisplay.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay.vsh; sourceTree = "<group>"; };
+		6B0CA5481F3C014A001643D9 /* HistogramDisplay_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5491F3C014A001643D9 /* HistogramDisplay_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA54A1F3C014A001643D9 /* HistogramEqualizationBlue_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationBlue_GL.fsh; sourceTree = "<group>"; };
+		6B0CA54B1F3C014A001643D9 /* HistogramEqualizationBlue_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationBlue_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA54C1F3C014A001643D9 /* HistogramEqualizationGreen_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationGreen_GL.fsh; sourceTree = "<group>"; };
+		6B0CA54D1F3C014A001643D9 /* HistogramEqualizationGreen_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationGreen_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA54E1F3C014A001643D9 /* HistogramEqualizationLuminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationLuminance_GL.fsh; sourceTree = "<group>"; };
+		6B0CA54F1F3C014A001643D9 /* HistogramEqualizationLuminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationLuminance_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5501F3C014A001643D9 /* HistogramEqualizationRed_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRed_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5511F3C014A001643D9 /* HistogramEqualizationRed_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRed_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5521F3C014A001643D9 /* HistogramEqualizationRGB_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRGB_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5531F3C014A001643D9 /* HistogramEqualizationRGB_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRGB_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5541F3C014A001643D9 /* HistogramGreenSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramGreenSampling.vsh; sourceTree = "<group>"; };
+		6B0CA5551F3C014A001643D9 /* HistogramLuminanceSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramLuminanceSampling.vsh; sourceTree = "<group>"; };
+		6B0CA5561F3C014A001643D9 /* HistogramRedSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramRedSampling.vsh; sourceTree = "<group>"; };
+		6B0CA5571F3C014A001643D9 /* Hue_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Hue_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5581F3C014A001643D9 /* Hue_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Hue_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5591F3C014A001643D9 /* HueBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HueBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA55A1F3C014A001643D9 /* HueBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HueBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA55B1F3C014A001643D9 /* Kuwahara_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Kuwahara_GL.fsh; sourceTree = "<group>"; };
+		6B0CA55C1F3C014A001643D9 /* Kuwahara_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Kuwahara_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA55D1F3C014A001643D9 /* KuwaharaRadius3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = KuwaharaRadius3_GL.fsh; sourceTree = "<group>"; };
+		6B0CA55E1F3C014A001643D9 /* KuwaharaRadius3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = KuwaharaRadius3_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA55F1F3C014A001643D9 /* LanczosResampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling.vsh; sourceTree = "<group>"; };
+		6B0CA5601F3C014A001643D9 /* LanczosResampling_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5611F3C014A001643D9 /* LanczosResampling_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5621F3C014A001643D9 /* Laplacian_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Laplacian_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5631F3C014A001643D9 /* Laplacian_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Laplacian_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5641F3C014A001643D9 /* Levels_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Levels_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5651F3C014A001643D9 /* Levels_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Levels_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5661F3C014A001643D9 /* LightenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LightenBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5671F3C014A001643D9 /* LightenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LightenBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5681F3C014A001643D9 /* Line.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line.vsh; sourceTree = "<group>"; };
+		6B0CA5691F3C014A001643D9 /* Line_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line_GL.fsh; sourceTree = "<group>"; };
+		6B0CA56A1F3C014A001643D9 /* Line_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA56B1F3C014A001643D9 /* LinearBurnBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LinearBurnBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA56C1F3C014A001643D9 /* LinearBurnBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LinearBurnBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA56D1F3C014A001643D9 /* LocalBinaryPattern_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LocalBinaryPattern_GL.fsh; sourceTree = "<group>"; };
+		6B0CA56E1F3C014A001643D9 /* LocalBinaryPattern_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LocalBinaryPattern_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA56F1F3C014A001643D9 /* Lookup_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lookup_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5701F3C014A001643D9 /* Lookup_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lookup_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5711F3C014A001643D9 /* Luminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Luminance_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5721F3C014A001643D9 /* Luminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Luminance_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5731F3C014A001643D9 /* LuminanceRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceRange_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5741F3C014A001643D9 /* LuminanceRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceRange_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5751F3C014A001643D9 /* LuminanceThreshold_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceThreshold_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5761F3C014A001643D9 /* LuminanceThreshold_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceThreshold_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5771F3C014A001643D9 /* LuminosityBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminosityBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5781F3C014A001643D9 /* LuminosityBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminosityBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5791F3C014A001643D9 /* Median_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Median_GL.fsh; sourceTree = "<group>"; };
+		6B0CA57A1F3C014A001643D9 /* Median_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Median_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA57B1F3C014A001643D9 /* Monochrome_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Monochrome_GL.fsh; sourceTree = "<group>"; };
+		6B0CA57C1F3C014A001643D9 /* Monochrome_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Monochrome_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA57D1F3C014A001643D9 /* MotionBlur.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur.vsh; sourceTree = "<group>"; };
+		6B0CA57E1F3C014A001643D9 /* MotionBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur_GL.fsh; sourceTree = "<group>"; };
+		6B0CA57F1F3C014A001643D9 /* MotionBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5801F3C014A001643D9 /* MotionComparison_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionComparison_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5811F3C014A001643D9 /* MotionComparison_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionComparison_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5821F3C014A001643D9 /* MultiplyBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MultiplyBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5831F3C014A001643D9 /* MultiplyBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MultiplyBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5841F3C014A001643D9 /* NearbyTexelSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NearbyTexelSampling.vsh; sourceTree = "<group>"; };
+		6B0CA5851F3C014A001643D9 /* NobleCornerDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NobleCornerDetector_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5861F3C014A001643D9 /* NobleCornerDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NobleCornerDetector_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5871F3C014A001643D9 /* NormalBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NormalBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5881F3C014A001643D9 /* NormalBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NormalBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5891F3C014A001643D9 /* OneInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OneInput.vsh; sourceTree = "<group>"; };
+		6B0CA58A1F3C014A001643D9 /* Opacity_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Opacity_GL.fsh; sourceTree = "<group>"; };
+		6B0CA58B1F3C014A001643D9 /* Opacity_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Opacity_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA58C1F3C014A001643D9 /* OverlayBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OverlayBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA58D1F3C014A001643D9 /* OverlayBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OverlayBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA58E1F3C014A001643D9 /* Passthrough_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Passthrough_GL.fsh; sourceTree = "<group>"; };
+		6B0CA58F1F3C014A001643D9 /* Passthrough_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Passthrough_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5901F3C014A001643D9 /* PinchDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PinchDistortion_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5911F3C014A001643D9 /* PinchDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PinchDistortion_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5921F3C014A001643D9 /* Pixellate_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Pixellate_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5931F3C014A001643D9 /* Pixellate_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Pixellate_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5941F3C014A001643D9 /* PolarPixellate_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolarPixellate_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5951F3C014A001643D9 /* PolarPixellate_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolarPixellate_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5961F3C014A001643D9 /* PolkaDot_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolkaDot_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5971F3C014A001643D9 /* PolkaDot_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolkaDot_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5981F3C014A001643D9 /* Posterize_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Posterize_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5991F3C014A001643D9 /* Posterize_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Posterize_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA59A1F3C014A001643D9 /* PrewittEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PrewittEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		6B0CA59B1F3C014A001643D9 /* PrewittEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PrewittEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA59C1F3C014A001643D9 /* RGBAdjustment_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = RGBAdjustment_GL.fsh; sourceTree = "<group>"; };
+		6B0CA59D1F3C014A001643D9 /* RGBAdjustment_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = RGBAdjustment_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA59E1F3C014A001643D9 /* Saturation_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Saturation_GL.fsh; sourceTree = "<group>"; };
+		6B0CA59F1F3C014A001643D9 /* Saturation_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Saturation_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5A01F3C014A001643D9 /* SaturationBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SaturationBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5A11F3C014A001643D9 /* SaturationBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SaturationBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5A21F3C014A001643D9 /* ScreenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScreenBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5A31F3C014A001643D9 /* ScreenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScreenBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5A41F3C014A001643D9 /* ShaderConverter.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ShaderConverter.sh; sourceTree = "<group>"; };
+		6B0CA5A51F3C014A001643D9 /* Sharpen.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen.vsh; sourceTree = "<group>"; };
+		6B0CA5A61F3C014A001643D9 /* Sharpen_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5A71F3C014A001643D9 /* Sharpen_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5A81F3C014A001643D9 /* ShiTomasiFeatureDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShiTomasiFeatureDetector_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5A91F3C014A001643D9 /* ShiTomasiFeatureDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShiTomasiFeatureDetector_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5AA1F3C014A001643D9 /* Sketch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sketch_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5AB1F3C014A001643D9 /* Sketch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sketch_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5AC1F3C014A001643D9 /* SobelEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SobelEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5AD1F3C014A001643D9 /* SobelEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SobelEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5AE1F3C014A001643D9 /* SoftLightBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoftLightBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5AF1F3C014A001643D9 /* SoftLightBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoftLightBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5B01F3C014A001643D9 /* Solarize_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Solarize_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5B11F3C014A001643D9 /* Solarize_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Solarize_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5B21F3C014A001643D9 /* SourceOverBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SourceOverBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5B31F3C014A001643D9 /* SourceOverBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SourceOverBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5B41F3C014A001643D9 /* SphereRefraction_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SphereRefraction_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5B51F3C014A001643D9 /* SphereRefraction_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SphereRefraction_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5B61F3C014A001643D9 /* StretchDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = StretchDistortion_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5B71F3C014A001643D9 /* StretchDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = StretchDistortion_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5B81F3C014A001643D9 /* SubtractBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SubtractBlend_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5B91F3C014A001643D9 /* SubtractBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SubtractBlend_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5BA1F3C014A001643D9 /* Swirl_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Swirl_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5BB1F3C014A001643D9 /* Swirl_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Swirl_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5BC1F3C014A001643D9 /* ThreeInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThreeInput.vsh; sourceTree = "<group>"; };
+		6B0CA5BD1F3C014A001643D9 /* ThresholdEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5BE1F3C014A001643D9 /* ThresholdEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5BF1F3C014A001643D9 /* ThresholdedNonMaximumSuppression_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5C01F3C014A001643D9 /* ThresholdedNonMaximumSuppression_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5C11F3C014A001643D9 /* ThresholdSketch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdSketch_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5C21F3C014A001643D9 /* ThresholdSketch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdSketch_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5C31F3C014A001643D9 /* TiltShift_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TiltShift_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5C41F3C014A001643D9 /* TiltShift_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TiltShift_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5C51F3C014A001643D9 /* Toon_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Toon_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5C61F3C014A001643D9 /* Toon_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Toon_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5C71F3C014A001643D9 /* Transform.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Transform.vsh; sourceTree = "<group>"; };
+		6B0CA5C81F3C014A001643D9 /* TwoInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TwoInput.vsh; sourceTree = "<group>"; };
+		6B0CA5C91F3C014A001643D9 /* UnsharpMask_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = UnsharpMask_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5CA1F3C014A001643D9 /* UnsharpMask_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = UnsharpMask_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5CB1F3C014A001643D9 /* Vibrance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vibrance_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5CC1F3C014A001643D9 /* Vibrance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vibrance_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5CD1F3C014A001643D9 /* Vignette_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vignette_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5CE1F3C014A001643D9 /* Vignette_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vignette_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5CF1F3C014A001643D9 /* WeakPixelInclusion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WeakPixelInclusion_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5D01F3C014A001643D9 /* WeakPixelInclusion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WeakPixelInclusion_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5D11F3C014A001643D9 /* WhiteBalance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WhiteBalance_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5D21F3C014A001643D9 /* WhiteBalance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WhiteBalance_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5D31F3C014A001643D9 /* XYDerivative_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = XYDerivative_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5D41F3C014A001643D9 /* XYDerivative_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = XYDerivative_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5D51F3C014A001643D9 /* YUVConversionFullRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRange_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5D61F3C014A001643D9 /* YUVConversionFullRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRange_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5D71F3C014A001643D9 /* YUVConversionFullRangeUVPlanar_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRangeUVPlanar_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5D81F3C014A001643D9 /* YUVConversionFullRangeUVPlanar_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRangeUVPlanar_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5D91F3C014A001643D9 /* YUVConversionVideoRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionVideoRange_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5DA1F3C014A001643D9 /* YUVConversionVideoRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionVideoRange_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5DB1F3C014A001643D9 /* ZoomBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlur_GL.fsh; sourceTree = "<group>"; };
+		6B0CA5DC1F3C014A001643D9 /* ZoomBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlur_GLES.fsh; sourceTree = "<group>"; };
+		6B0CA5DD1F3C014A001643D9 /* Sharpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sharpen.swift; sourceTree = "<group>"; };
+		6B0CA5DE1F3C014A001643D9 /* ShiTomasiFeatureDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiTomasiFeatureDetector.swift; sourceTree = "<group>"; };
+		6B0CA5DF1F3C014A001643D9 /* SingleComponentGaussianBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleComponentGaussianBlur.swift; sourceTree = "<group>"; };
+		6B0CA5E01F3C014A001643D9 /* SketchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchFilter.swift; sourceTree = "<group>"; };
+		6B0CA5E11F3C014A001643D9 /* SmoothToonFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothToonFilter.swift; sourceTree = "<group>"; };
+		6B0CA5E21F3C014A001643D9 /* SobelEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobelEdgeDetection.swift; sourceTree = "<group>"; };
+		6B0CA5E31F3C014A001643D9 /* SoftElegance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftElegance.swift; sourceTree = "<group>"; };
+		6B0CA5E41F3C014A001643D9 /* SoftLightBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftLightBlend.swift; sourceTree = "<group>"; };
+		6B0CA5E51F3C014A001643D9 /* Solarize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solarize.swift; sourceTree = "<group>"; };
+		6B0CA5E61F3C014A001643D9 /* SolidColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidColorGenerator.swift; sourceTree = "<group>"; };
+		6B0CA5E71F3C014A001643D9 /* SourceOverBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOverBlend.swift; sourceTree = "<group>"; };
+		6B0CA5E81F3C014A001643D9 /* SphereRefraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereRefraction.swift; sourceTree = "<group>"; };
+		6B0CA5E91F3C014A001643D9 /* StretchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchDistortion.swift; sourceTree = "<group>"; };
+		6B0CA5EA1F3C014A001643D9 /* SubtractBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractBlend.swift; sourceTree = "<group>"; };
+		6B0CA5EB1F3C014A001643D9 /* SwirlDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwirlDistortion.swift; sourceTree = "<group>"; };
+		6B0CA5EC1F3C014A001643D9 /* ThresholdSketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdSketch.swift; sourceTree = "<group>"; };
+		6B0CA5ED1F3C014A001643D9 /* ThresholdSobelEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdSobelEdgeDetection.swift; sourceTree = "<group>"; };
+		6B0CA5EE1F3C014A001643D9 /* TiltShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltShift.swift; sourceTree = "<group>"; };
+		6B0CA5EF1F3C014A001643D9 /* ToonFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToonFilter.swift; sourceTree = "<group>"; };
+		6B0CA5F01F3C014A001643D9 /* TransformOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperation.swift; sourceTree = "<group>"; };
+		6B0CA5F11F3C014A001643D9 /* UnsharpMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsharpMask.swift; sourceTree = "<group>"; };
+		6B0CA5F21F3C014A001643D9 /* Vibrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrance.swift; sourceTree = "<group>"; };
+		6B0CA5F31F3C014A001643D9 /* Vignette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vignette.swift; sourceTree = "<group>"; };
+		6B0CA5F41F3C014A001643D9 /* WhiteBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBalance.swift; sourceTree = "<group>"; };
+		6B0CA5F51F3C014A001643D9 /* ZoomBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBlur.swift; sourceTree = "<group>"; };
+		6B0CA5F61F3C014A001643D9 /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		6B0CA5F71F3C014A001643D9 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		6B0CA5F81F3C014A001643D9 /* RawDataInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataInput.swift; sourceTree = "<group>"; };
+		6B0CA5F91F3C014A001643D9 /* RawDataOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataOutput.swift; sourceTree = "<group>"; };
+		6B0CA5FA1F3C014A001643D9 /* SerialDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatch.swift; sourceTree = "<group>"; };
+		6B0CA5FB1F3C014A001643D9 /* ShaderProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
+		6B0CA5FC1F3C014A001643D9 /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
+		6B0CA5FD1F3C014A001643D9 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		6B0CA5FE1F3C014A001643D9 /* TextureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureInput.swift; sourceTree = "<group>"; };
+		6B0CA5FF1F3C014A001643D9 /* TextureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureOutput.swift; sourceTree = "<group>"; };
+		6B0CA6001F3C014A001643D9 /* TextureSamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureSamplingOperation.swift; sourceTree = "<group>"; };
+		6B0CA6011F3C014A001643D9 /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
+		6B0CA6021F3C014A001643D9 /* TwoStageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoStageOperation.swift; sourceTree = "<group>"; };
+		6B0CA6041F3C0280001643D9 /* GPUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUViewController.swift; sourceTree = "<group>"; };
+		6B0CA6061F3C077F001643D9 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		6B0CA6071F3C11A5001643D9 /* food1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food1.jpg; sourceTree = "<group>"; };
 		6B191EF71ECD4E0F00C21065 /* LZJ_Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZJ_Coin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B191EFC1ECD4E0F00C21065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -401,9 +902,13 @@
 		6B90897A1EFBA5B000D7B7F8 /* 146-sound-waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "146-sound-waves.png"; sourceTree = "<group>"; };
 		6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6B9A87B41EF1476000CF5383 /* dingwei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dingwei.gpx; sourceTree = "<group>"; };
+		6BA88CB21F3057B300376FD5 /* LZJ_CoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZJ_CoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA88CB41F3057B300376FD5 /* LZJ_CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZJ_CoinTests.swift; sourceTree = "<group>"; };
+		6BA88CB61F3057B300376FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuBiCoin.swift; sourceTree = "<group>"; };
 		6BE9185F1F1F49BF006AB298 /* GravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
+		810DA32793E2544933B566A7 /* Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin-LZJ_CoinTests/Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZJ_Coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_ShowCoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_ShowCoin/Pods-LZJ_ShowCoin.release.xcconfig"; sourceTree = "<group>"; };
@@ -415,6 +920,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0CA4451F3BFF5D001643D9 /* GPUImage.framework in Frameworks */,
 				6BAAA98C1F09EDBB003FAE68 /* MediaPlayer.framework in Frameworks */,
 				383C14D73A3BD2D788703634 /* Pods_LZJ_Coin.framework in Frameworks */,
 			);
@@ -429,6 +935,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BA88CAF1F3057B300376FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730A024D94A48D9A5E4C80D6 /* Pods_LZJ_Coin_LZJ_CoinTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -439,8 +953,521 @@
 				5DC5E29CC50E492A898485DA /* Pods-LZJ_Coin.release.xcconfig */,
 				DD289C7C3BF122729872C41D /* Pods-LZJ_ShowCoin.debug.xcconfig */,
 				EB057FC464A9DFE2AFACEA7A /* Pods-LZJ_ShowCoin.release.xcconfig */,
+				15475CB0B5D1D76324E73D42 /* Pods-LZJ_Coin-LZJ_CoinTests.debug.xcconfig */,
+				810DA32793E2544933B566A7 /* Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B0CA4351F3BFF2B001643D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA43C1F3BFF2B001643D9 /* GPUImage.framework */,
+				6B0CA43E1F3BFF2B001643D9 /* GPUImageTests_macOS.xctest */,
+				6B0CA4401F3BFF2B001643D9 /* GPUImage.framework */,
+				6B0CA4421F3BFF2B001643D9 /* GPUImageTests_iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B0CA4481F3C014A001643D9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA4491F3C014A001643D9 /* BasicOperation.swift */,
+				6B0CA44A1F3C014A001643D9 /* CameraConversion.swift */,
+				6B0CA44B1F3C014A001643D9 /* Color.swift */,
+				6B0CA44C1F3C014A001643D9 /* FillMode.swift */,
+				6B0CA44D1F3C014A001643D9 /* Framebuffer.swift */,
+				6B0CA44E1F3C014A001643D9 /* FramebufferCache.swift */,
+				6B0CA44F1F3C014A001643D9 /* ImageGenerator.swift */,
+				6B0CA4501F3C014A001643D9 /* ImageOrientation.swift */,
+				6B0CA4511F3C014A001643D9 /* iOS */,
+				6B0CA45A1F3C014A001643D9 /* Linux */,
+				6B0CA4621F3C014A001643D9 /* Mac */,
+				6B0CA46A1F3C014A001643D9 /* Matrix.swift */,
+				6B0CA46B1F3C014A001643D9 /* OpenGLContext_Shared.swift */,
+				6B0CA46C1F3C014A001643D9 /* OpenGLRendering.swift */,
+				6B0CA46D1F3C014A001643D9 /* OperationGroup.swift */,
+				6B0CA46E1F3C014A001643D9 /* Operations */,
+				6B0CA5F61F3C014A001643D9 /* Pipeline.swift */,
+				6B0CA5F71F3C014A001643D9 /* Position.swift */,
+				6B0CA5F81F3C014A001643D9 /* RawDataInput.swift */,
+				6B0CA5F91F3C014A001643D9 /* RawDataOutput.swift */,
+				6B0CA5FA1F3C014A001643D9 /* SerialDispatch.swift */,
+				6B0CA5FB1F3C014A001643D9 /* ShaderProgram.swift */,
+				6B0CA5FC1F3C014A001643D9 /* ShaderUniformSettings.swift */,
+				6B0CA5FD1F3C014A001643D9 /* Size.swift */,
+				6B0CA5FE1F3C014A001643D9 /* TextureInput.swift */,
+				6B0CA5FF1F3C014A001643D9 /* TextureOutput.swift */,
+				6B0CA6001F3C014A001643D9 /* TextureSamplingOperation.swift */,
+				6B0CA6011F3C014A001643D9 /* Timestamp.swift */,
+				6B0CA6021F3C014A001643D9 /* TwoStageOperation.swift */,
+			);
+			name = Source;
+			path = Framework/Source;
+			sourceTree = "<group>";
+		};
+		6B0CA4511F3C014A001643D9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA4521F3C014A001643D9 /* Camera.swift */,
+				6B0CA4531F3C014A001643D9 /* GPUImage.h */,
+				6B0CA4541F3C014A001643D9 /* MovieInput.swift */,
+				6B0CA4551F3C014A001643D9 /* MovieOutput.swift */,
+				6B0CA4561F3C014A001643D9 /* OpenGLContext.swift */,
+				6B0CA4571F3C014A001643D9 /* PictureInput.swift */,
+				6B0CA4581F3C014A001643D9 /* PictureOutput.swift */,
+				6B0CA4591F3C014A001643D9 /* RenderView.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		6B0CA45A1F3C014A001643D9 /* Linux */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA45B1F3C014A001643D9 /* GLUTRenderWindow.swift */,
+				6B0CA45C1F3C014A001643D9 /* OpenGLContext-RPi.swift */,
+				6B0CA45D1F3C014A001643D9 /* OpenGLContext.swift */,
+				6B0CA45E1F3C014A001643D9 /* RPiRenderWindow.swift */,
+				6B0CA45F1F3C014A001643D9 /* V4LCamera.swift */,
+				6B0CA4601F3C014A001643D9 /* v4lfuncs.c */,
+				6B0CA4611F3C014A001643D9 /* v4lfuncs.h */,
+			);
+			path = Linux;
+			sourceTree = "<group>";
+		};
+		6B0CA4621F3C014A001643D9 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA4631F3C014A001643D9 /* Camera.swift */,
+				6B0CA4641F3C014A001643D9 /* MovieInput.swift */,
+				6B0CA4651F3C014A001643D9 /* MovieOutput.swift */,
+				6B0CA4661F3C014A001643D9 /* OpenGLContext.swift */,
+				6B0CA4671F3C014A001643D9 /* PictureInput.swift */,
+				6B0CA4681F3C014A001643D9 /* PictureOutput.swift */,
+				6B0CA4691F3C014A001643D9 /* RenderView.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		6B0CA46E1F3C014A001643D9 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA46F1F3C014A001643D9 /* AdaptiveThreshold.swift */,
+				6B0CA4701F3C014A001643D9 /* AddBlend.swift */,
+				6B0CA4711F3C014A001643D9 /* AlphaBlend.swift */,
+				6B0CA4721F3C014A001643D9 /* AmatorkaFilter.swift */,
+				6B0CA4731F3C014A001643D9 /* AverageColorExtractor.swift */,
+				6B0CA4741F3C014A001643D9 /* AverageLuminanceExtractor.swift */,
+				6B0CA4751F3C014A001643D9 /* AverageLuminanceThreshold.swift */,
+				6B0CA4761F3C014A001643D9 /* BilateralBlur.swift */,
+				6B0CA4771F3C014A001643D9 /* BoxBlur.swift */,
+				6B0CA4781F3C014A001643D9 /* BrightnessAdjustment.swift */,
+				6B0CA4791F3C014A001643D9 /* BulgeDistortion.swift */,
+				6B0CA47A1F3C014A001643D9 /* CannyEdgeDetection.swift */,
+				6B0CA47B1F3C014A001643D9 /* CGAColorspaceFilter.swift */,
+				6B0CA47C1F3C014A001643D9 /* ChromaKeyBlend.swift */,
+				6B0CA47D1F3C014A001643D9 /* ChromaKeying.swift */,
+				6B0CA47E1F3C014A001643D9 /* CircleGenerator.swift */,
+				6B0CA47F1F3C014A001643D9 /* ClosingFilter.swift */,
+				6B0CA4801F3C014A001643D9 /* ColorBlend.swift */,
+				6B0CA4811F3C014A001643D9 /* ColorBurnBlend.swift */,
+				6B0CA4821F3C014A001643D9 /* ColorDodgeBlend.swift */,
+				6B0CA4831F3C014A001643D9 /* ColorInversion.swift */,
+				6B0CA4841F3C014A001643D9 /* ColorLocalBinaryPattern.swift */,
+				6B0CA4851F3C014A001643D9 /* ColorMatrixFilter.swift */,
+				6B0CA4861F3C014A001643D9 /* ColourFASTFeatureDetection.swift */,
+				6B0CA4871F3C014A001643D9 /* ContrastAdjustment.swift */,
+				6B0CA4881F3C014A001643D9 /* Convolution3x3.swift */,
+				6B0CA4891F3C014A001643D9 /* Crop.swift */,
+				6B0CA48A1F3C014A001643D9 /* CrosshairGenerator.swift */,
+				6B0CA48B1F3C014A001643D9 /* Crosshatch.swift */,
+				6B0CA48C1F3C014A001643D9 /* DarkenBlend.swift */,
+				6B0CA48D1F3C014A001643D9 /* DifferenceBlend.swift */,
+				6B0CA48E1F3C014A001643D9 /* Dilation.swift */,
+				6B0CA48F1F3C014A001643D9 /* DissolveBlend.swift */,
+				6B0CA4901F3C014A001643D9 /* DivideBlend.swift */,
+				6B0CA4911F3C014A001643D9 /* EmbossFilter.swift */,
+				6B0CA4921F3C014A001643D9 /* Erosion.swift */,
+				6B0CA4931F3C014A001643D9 /* ExclusionBlend.swift */,
+				6B0CA4941F3C014A001643D9 /* ExposureAdjustment.swift */,
+				6B0CA4951F3C014A001643D9 /* FalseColor.swift */,
+				6B0CA4961F3C014A001643D9 /* GammaAdjustment.swift */,
+				6B0CA4971F3C014A001643D9 /* GaussianBlur.swift */,
+				6B0CA4981F3C014A001643D9 /* GlassSphereRefraction.swift */,
+				6B0CA4991F3C014A001643D9 /* Halftone.swift */,
+				6B0CA49A1F3C014A001643D9 /* HardLightBlend.swift */,
+				6B0CA49B1F3C014A001643D9 /* HarrisCornerDetector.swift */,
+				6B0CA49C1F3C014A001643D9 /* Haze.swift */,
+				6B0CA49D1F3C014A001643D9 /* HighlightAndShadowTint.swift */,
+				6B0CA49E1F3C014A001643D9 /* HighlightsAndShadows.swift */,
+				6B0CA49F1F3C014A001643D9 /* HighPassFilter.swift */,
+				6B0CA4A01F3C014A001643D9 /* Histogram.swift */,
+				6B0CA4A11F3C014A001643D9 /* HistogramDisplay.swift */,
+				6B0CA4A21F3C014A001643D9 /* HistogramEqualization.swift */,
+				6B0CA4A31F3C014A001643D9 /* HueAdjustment.swift */,
+				6B0CA4A41F3C014A001643D9 /* HueBlend.swift */,
+				6B0CA4A51F3C014A001643D9 /* ImageBuffer.swift */,
+				6B0CA4A61F3C014A001643D9 /* iOSBlur.swift */,
+				6B0CA4A71F3C014A001643D9 /* KuwaharaFilter.swift */,
+				6B0CA4A81F3C014A001643D9 /* KuwaharaRadius3Filter.swift */,
+				6B0CA4A91F3C014A001643D9 /* LanczosResampling.swift */,
+				6B0CA4AA1F3C014A001643D9 /* Laplacian.swift */,
+				6B0CA4AB1F3C014A001643D9 /* LevelsAdjustment.swift */,
+				6B0CA4AC1F3C014A001643D9 /* LightenBlend.swift */,
+				6B0CA4AD1F3C014A001643D9 /* LinearBurnBlend.swift */,
+				6B0CA4AE1F3C014A001643D9 /* LineGenerator.swift */,
+				6B0CA4AF1F3C014A001643D9 /* LocalBinaryPattern.swift */,
+				6B0CA4B01F3C014A001643D9 /* LookupFilter.swift */,
+				6B0CA4B11F3C014A001643D9 /* LookupImages */,
+				6B0CA4B71F3C014A001643D9 /* LowPassFilter.swift */,
+				6B0CA4B81F3C014A001643D9 /* Luminance.swift */,
+				6B0CA4B91F3C014A001643D9 /* LuminanceRangeReduction.swift */,
+				6B0CA4BA1F3C014A001643D9 /* LuminanceThreshold.swift */,
+				6B0CA4BB1F3C014A001643D9 /* LuminosityBlend.swift */,
+				6B0CA4BC1F3C014A001643D9 /* MedianFilter.swift */,
+				6B0CA4BD1F3C014A001643D9 /* MissEtikateFilter.swift */,
+				6B0CA4BE1F3C014A001643D9 /* MonochromeFilter.swift */,
+				6B0CA4BF1F3C014A001643D9 /* MotionBlur.swift */,
+				6B0CA4C01F3C014A001643D9 /* MotionDetector.swift */,
+				6B0CA4C11F3C014A001643D9 /* MultiplyBlend.swift */,
+				6B0CA4C21F3C014A001643D9 /* NobleCornerDetector.swift */,
+				6B0CA4C31F3C014A001643D9 /* NormalBlend.swift */,
+				6B0CA4C41F3C014A001643D9 /* OpacityAdjustment.swift */,
+				6B0CA4C51F3C014A001643D9 /* OpeningFilter.swift */,
+				6B0CA4C61F3C014A001643D9 /* OverlayBlend.swift */,
+				6B0CA4C71F3C014A001643D9 /* PinchDistortion.swift */,
+				6B0CA4C81F3C014A001643D9 /* Pixellate.swift */,
+				6B0CA4C91F3C014A001643D9 /* PolarPixellate.swift */,
+				6B0CA4CA1F3C014A001643D9 /* PolkaDot.swift */,
+				6B0CA4CB1F3C014A001643D9 /* Posterize.swift */,
+				6B0CA4CC1F3C014A001643D9 /* PrewittEdgeDetection.swift */,
+				6B0CA4CD1F3C014A001643D9 /* RGBAdjustmentFilter.swift */,
+				6B0CA4CE1F3C014A001643D9 /* SaturationAdjustment.swift */,
+				6B0CA4CF1F3C014A001643D9 /* SaturationBlend.swift */,
+				6B0CA4D01F3C014A001643D9 /* ScreenBlend.swift */,
+				6B0CA4D11F3C014A001643D9 /* SepiaToneFilter.swift */,
+				6B0CA4D21F3C014A001643D9 /* Shaders */,
+				6B0CA5DD1F3C014A001643D9 /* Sharpen.swift */,
+				6B0CA5DE1F3C014A001643D9 /* ShiTomasiFeatureDetector.swift */,
+				6B0CA5DF1F3C014A001643D9 /* SingleComponentGaussianBlur.swift */,
+				6B0CA5E01F3C014A001643D9 /* SketchFilter.swift */,
+				6B0CA5E11F3C014A001643D9 /* SmoothToonFilter.swift */,
+				6B0CA5E21F3C014A001643D9 /* SobelEdgeDetection.swift */,
+				6B0CA5E31F3C014A001643D9 /* SoftElegance.swift */,
+				6B0CA5E41F3C014A001643D9 /* SoftLightBlend.swift */,
+				6B0CA5E51F3C014A001643D9 /* Solarize.swift */,
+				6B0CA5E61F3C014A001643D9 /* SolidColorGenerator.swift */,
+				6B0CA5E71F3C014A001643D9 /* SourceOverBlend.swift */,
+				6B0CA5E81F3C014A001643D9 /* SphereRefraction.swift */,
+				6B0CA5E91F3C014A001643D9 /* StretchDistortion.swift */,
+				6B0CA5EA1F3C014A001643D9 /* SubtractBlend.swift */,
+				6B0CA5EB1F3C014A001643D9 /* SwirlDistortion.swift */,
+				6B0CA5EC1F3C014A001643D9 /* ThresholdSketch.swift */,
+				6B0CA5ED1F3C014A001643D9 /* ThresholdSobelEdgeDetection.swift */,
+				6B0CA5EE1F3C014A001643D9 /* TiltShift.swift */,
+				6B0CA5EF1F3C014A001643D9 /* ToonFilter.swift */,
+				6B0CA5F01F3C014A001643D9 /* TransformOperation.swift */,
+				6B0CA5F11F3C014A001643D9 /* UnsharpMask.swift */,
+				6B0CA5F21F3C014A001643D9 /* Vibrance.swift */,
+				6B0CA5F31F3C014A001643D9 /* Vignette.swift */,
+				6B0CA5F41F3C014A001643D9 /* WhiteBalance.swift */,
+				6B0CA5F51F3C014A001643D9 /* ZoomBlur.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		6B0CA4B11F3C014A001643D9 /* LookupImages */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA4B21F3C014A001643D9 /* lookup.png */,
+				6B0CA4B31F3C014A001643D9 /* lookup_amatorka.png */,
+				6B0CA4B41F3C014A001643D9 /* lookup_miss_etikate.png */,
+				6B0CA4B51F3C014A001643D9 /* lookup_soft_elegance_1.png */,
+				6B0CA4B61F3C014A001643D9 /* lookup_soft_elegance_2.png */,
+			);
+			path = LookupImages;
+			sourceTree = "<group>";
+		};
+		6B0CA4D21F3C014A001643D9 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA4D31F3C014A001643D9 /* AdaptiveThreshold_GL.fsh */,
+				6B0CA4D41F3C014A001643D9 /* AdaptiveThreshold_GLES.fsh */,
+				6B0CA4D51F3C014A001643D9 /* AddBlend_GL.fsh */,
+				6B0CA4D61F3C014A001643D9 /* AddBlend_GLES.fsh */,
+				6B0CA4D71F3C014A001643D9 /* AlphaBlend_GL.fsh */,
+				6B0CA4D81F3C014A001643D9 /* AlphaBlend_GLES.fsh */,
+				6B0CA4D91F3C014A001643D9 /* AlphaTest_GL.fsh */,
+				6B0CA4DA1F3C014A001643D9 /* AlphaTest_GLES.fsh */,
+				6B0CA4DB1F3C014A001643D9 /* AverageColor.vsh */,
+				6B0CA4DC1F3C014A001643D9 /* AverageColor_GL.fsh */,
+				6B0CA4DD1F3C014A001643D9 /* AverageColor_GLES.fsh */,
+				6B0CA4DE1F3C014A001643D9 /* AverageLuminance_GL.fsh */,
+				6B0CA4DF1F3C014A001643D9 /* AverageLuminance_GLES.fsh */,
+				6B0CA4E01F3C014A001643D9 /* BilateralBlur.vsh */,
+				6B0CA4E11F3C014A001643D9 /* BilateralBlur_GL.fsh */,
+				6B0CA4E21F3C014A001643D9 /* BilateralBlur_GLES.fsh */,
+				6B0CA4E31F3C014A001643D9 /* Brightness_GL.fsh */,
+				6B0CA4E41F3C014A001643D9 /* Brightness_GLES.fsh */,
+				6B0CA4E51F3C014A001643D9 /* BulgeDistortion_GL.fsh */,
+				6B0CA4E61F3C014A001643D9 /* BulgeDistortion_GLES.fsh */,
+				6B0CA4E71F3C014A001643D9 /* CGAColorspace_GL.fsh */,
+				6B0CA4E81F3C014A001643D9 /* CGAColorspace_GLES.fsh */,
+				6B0CA4E91F3C014A001643D9 /* ChromaKey_GL.fsh */,
+				6B0CA4EA1F3C014A001643D9 /* ChromaKey_GLES.fsh */,
+				6B0CA4EB1F3C014A001643D9 /* ChromaKeyBlend_GL.fsh */,
+				6B0CA4EC1F3C014A001643D9 /* ChromaKeyBlend_GLES.fsh */,
+				6B0CA4ED1F3C014A001643D9 /* Circle.vsh */,
+				6B0CA4EE1F3C014A001643D9 /* Circle_GL.fsh */,
+				6B0CA4EF1F3C014A001643D9 /* Circle_GLES.fsh */,
+				6B0CA4F01F3C014A001643D9 /* ColorBlend_GL.fsh */,
+				6B0CA4F11F3C014A001643D9 /* ColorBlend_GLES.fsh */,
+				6B0CA4F21F3C014A001643D9 /* ColorBurnBlend_GL.fsh */,
+				6B0CA4F31F3C014A001643D9 /* ColorBurnBlend_GLES.fsh */,
+				6B0CA4F41F3C014A001643D9 /* ColorDodgeBlend_GL.fsh */,
+				6B0CA4F51F3C014A001643D9 /* ColorDodgeBlend_GLES.fsh */,
+				6B0CA4F61F3C014A001643D9 /* ColorInvert_GL.fsh */,
+				6B0CA4F71F3C014A001643D9 /* ColorInvert_GLES.fsh */,
+				6B0CA4F81F3C014A001643D9 /* ColorLocalBinaryPattern_GL.fsh */,
+				6B0CA4F91F3C014A001643D9 /* ColorLocalBinaryPattern_GLES.fsh */,
+				6B0CA4FA1F3C014A001643D9 /* ColorMatrix_GL.fsh */,
+				6B0CA4FB1F3C014A001643D9 /* ColorMatrix_GLES.fsh */,
+				6B0CA4FC1F3C014A001643D9 /* ColorSwizzling_GL.fsh */,
+				6B0CA4FD1F3C014A001643D9 /* ColorSwizzling_GLES.fsh */,
+				6B0CA4FE1F3C014A001643D9 /* ColourFASTDecriptor.vsh */,
+				6B0CA4FF1F3C014A001643D9 /* ColourFASTDecriptor_GL.fsh */,
+				6B0CA5001F3C014A001643D9 /* ColourFASTDecriptor_GLES.fsh */,
+				6B0CA5011F3C014A001643D9 /* Contrast_GL.fsh */,
+				6B0CA5021F3C014A001643D9 /* Contrast_GLES.fsh */,
+				6B0CA5031F3C014A001643D9 /* ConvertedShaders_GL.swift */,
+				6B0CA5041F3C014A001643D9 /* ConvertedShaders_GLES.swift */,
+				6B0CA5051F3C014A001643D9 /* Convolution3x3_GL.fsh */,
+				6B0CA5061F3C014A001643D9 /* Convolution3x3_GLES.fsh */,
+				6B0CA5071F3C014A001643D9 /* Crosshair.vsh */,
+				6B0CA5081F3C014A001643D9 /* Crosshair_GL.fsh */,
+				6B0CA5091F3C014A001643D9 /* Crosshair_GLES.fsh */,
+				6B0CA50A1F3C014A001643D9 /* Crosshatch_GL.fsh */,
+				6B0CA50B1F3C014A001643D9 /* Crosshatch_GLES.fsh */,
+				6B0CA50C1F3C014A001643D9 /* DarkenBlend_GL.fsh */,
+				6B0CA50D1F3C014A001643D9 /* DarkenBlend_GLES.fsh */,
+				6B0CA50E1F3C014A001643D9 /* DifferenceBlend_GL.fsh */,
+				6B0CA50F1F3C014A001643D9 /* DifferenceBlend_GLES.fsh */,
+				6B0CA5101F3C014A001643D9 /* Dilation1_GL.fsh */,
+				6B0CA5111F3C014A001643D9 /* Dilation1_GLES.fsh */,
+				6B0CA5121F3C014A001643D9 /* Dilation2_GL.fsh */,
+				6B0CA5131F3C014A001643D9 /* Dilation2_GLES.fsh */,
+				6B0CA5141F3C014A001643D9 /* Dilation3_GL.fsh */,
+				6B0CA5151F3C014A001643D9 /* Dilation3_GLES.fsh */,
+				6B0CA5161F3C014A001643D9 /* Dilation4_GL.fsh */,
+				6B0CA5171F3C014A001643D9 /* Dilation4_GLES.fsh */,
+				6B0CA5181F3C014A001643D9 /* DirectionalNonMaximumSuppression_GL.fsh */,
+				6B0CA5191F3C014A001643D9 /* DirectionalNonMaximumSuppression_GLES.fsh */,
+				6B0CA51A1F3C014A001643D9 /* DirectionalSobelEdgeDetection_GL.fsh */,
+				6B0CA51B1F3C014A001643D9 /* DirectionalSobelEdgeDetection_GLES.fsh */,
+				6B0CA51C1F3C014A001643D9 /* DissolveBlend_GL.fsh */,
+				6B0CA51D1F3C014A001643D9 /* DissolveBlend_GLES.fsh */,
+				6B0CA51E1F3C014A001643D9 /* DivideBlend_GL.fsh */,
+				6B0CA51F1F3C014A001643D9 /* DivideBlend_GLES.fsh */,
+				6B0CA5201F3C014A001643D9 /* Erosion1_GL.fsh */,
+				6B0CA5211F3C014A001643D9 /* Erosion1_GLES.fsh */,
+				6B0CA5221F3C014A001643D9 /* Erosion2_GL.fsh */,
+				6B0CA5231F3C014A001643D9 /* Erosion2_GLES.fsh */,
+				6B0CA5241F3C014A001643D9 /* Erosion3_GL.fsh */,
+				6B0CA5251F3C014A001643D9 /* Erosion3_GLES.fsh */,
+				6B0CA5261F3C014A001643D9 /* Erosion4_GL.fsh */,
+				6B0CA5271F3C014A001643D9 /* Erosion4_GLES.fsh */,
+				6B0CA5281F3C014A001643D9 /* ErosionDilation1.vsh */,
+				6B0CA5291F3C014A001643D9 /* ErosionDilation2.vsh */,
+				6B0CA52A1F3C014A001643D9 /* ErosionDilation3.vsh */,
+				6B0CA52B1F3C014A001643D9 /* ErosionDilation4.vsh */,
+				6B0CA52C1F3C014A001643D9 /* ExclusionBlend_GL.fsh */,
+				6B0CA52D1F3C014A001643D9 /* ExclusionBlend_GLES.fsh */,
+				6B0CA52E1F3C014A001643D9 /* Exposure_GL.fsh */,
+				6B0CA52F1F3C014A001643D9 /* Exposure_GLES.fsh */,
+				6B0CA5301F3C014A001643D9 /* FalseColor_GL.fsh */,
+				6B0CA5311F3C014A001643D9 /* FalseColor_GLES.fsh */,
+				6B0CA5321F3C014A001643D9 /* FiveInput.vsh */,
+				6B0CA5331F3C014A001643D9 /* FourInput.vsh */,
+				6B0CA5341F3C014A001643D9 /* Gamma_GL.fsh */,
+				6B0CA5351F3C014A001643D9 /* Gamma_GLES.fsh */,
+				6B0CA5361F3C014A001643D9 /* GlassSphere_GL.fsh */,
+				6B0CA5371F3C014A001643D9 /* GlassSphere_GLES.fsh */,
+				6B0CA5381F3C014A001643D9 /* Halftone_GL.fsh */,
+				6B0CA5391F3C014A001643D9 /* Halftone_GLES.fsh */,
+				6B0CA53A1F3C014A001643D9 /* HardLightBlend_GL.fsh */,
+				6B0CA53B1F3C014A001643D9 /* HardLightBlend_GLES.fsh */,
+				6B0CA53C1F3C014A001643D9 /* HarrisCornerDetector_GL.fsh */,
+				6B0CA53D1F3C014A001643D9 /* HarrisCornerDetector_GLES.fsh */,
+				6B0CA53E1F3C014A001643D9 /* Haze_GL.fsh */,
+				6B0CA53F1F3C014A001643D9 /* Haze_GLES.fsh */,
+				6B0CA5401F3C014A001643D9 /* HighlightShadow_GL.fsh */,
+				6B0CA5411F3C014A001643D9 /* HighlightShadow_GLES.fsh */,
+				6B0CA5421F3C014A001643D9 /* HighlightShadowTint_GL.fsh */,
+				6B0CA5431F3C014A001643D9 /* HighlightShadowTint_GLES.fsh */,
+				6B0CA5441F3C014A001643D9 /* HistogramAccumulation_GL.fsh */,
+				6B0CA5451F3C014A001643D9 /* HistogramAccumulation_GLES.fsh */,
+				6B0CA5461F3C014A001643D9 /* HistogramBlueSampling.vsh */,
+				6B0CA5471F3C014A001643D9 /* HistogramDisplay.vsh */,
+				6B0CA5481F3C014A001643D9 /* HistogramDisplay_GL.fsh */,
+				6B0CA5491F3C014A001643D9 /* HistogramDisplay_GLES.fsh */,
+				6B0CA54A1F3C014A001643D9 /* HistogramEqualizationBlue_GL.fsh */,
+				6B0CA54B1F3C014A001643D9 /* HistogramEqualizationBlue_GLES.fsh */,
+				6B0CA54C1F3C014A001643D9 /* HistogramEqualizationGreen_GL.fsh */,
+				6B0CA54D1F3C014A001643D9 /* HistogramEqualizationGreen_GLES.fsh */,
+				6B0CA54E1F3C014A001643D9 /* HistogramEqualizationLuminance_GL.fsh */,
+				6B0CA54F1F3C014A001643D9 /* HistogramEqualizationLuminance_GLES.fsh */,
+				6B0CA5501F3C014A001643D9 /* HistogramEqualizationRed_GL.fsh */,
+				6B0CA5511F3C014A001643D9 /* HistogramEqualizationRed_GLES.fsh */,
+				6B0CA5521F3C014A001643D9 /* HistogramEqualizationRGB_GL.fsh */,
+				6B0CA5531F3C014A001643D9 /* HistogramEqualizationRGB_GLES.fsh */,
+				6B0CA5541F3C014A001643D9 /* HistogramGreenSampling.vsh */,
+				6B0CA5551F3C014A001643D9 /* HistogramLuminanceSampling.vsh */,
+				6B0CA5561F3C014A001643D9 /* HistogramRedSampling.vsh */,
+				6B0CA5571F3C014A001643D9 /* Hue_GL.fsh */,
+				6B0CA5581F3C014A001643D9 /* Hue_GLES.fsh */,
+				6B0CA5591F3C014A001643D9 /* HueBlend_GL.fsh */,
+				6B0CA55A1F3C014A001643D9 /* HueBlend_GLES.fsh */,
+				6B0CA55B1F3C014A001643D9 /* Kuwahara_GL.fsh */,
+				6B0CA55C1F3C014A001643D9 /* Kuwahara_GLES.fsh */,
+				6B0CA55D1F3C014A001643D9 /* KuwaharaRadius3_GL.fsh */,
+				6B0CA55E1F3C014A001643D9 /* KuwaharaRadius3_GLES.fsh */,
+				6B0CA55F1F3C014A001643D9 /* LanczosResampling.vsh */,
+				6B0CA5601F3C014A001643D9 /* LanczosResampling_GL.fsh */,
+				6B0CA5611F3C014A001643D9 /* LanczosResampling_GLES.fsh */,
+				6B0CA5621F3C014A001643D9 /* Laplacian_GL.fsh */,
+				6B0CA5631F3C014A001643D9 /* Laplacian_GLES.fsh */,
+				6B0CA5641F3C014A001643D9 /* Levels_GL.fsh */,
+				6B0CA5651F3C014A001643D9 /* Levels_GLES.fsh */,
+				6B0CA5661F3C014A001643D9 /* LightenBlend_GL.fsh */,
+				6B0CA5671F3C014A001643D9 /* LightenBlend_GLES.fsh */,
+				6B0CA5681F3C014A001643D9 /* Line.vsh */,
+				6B0CA5691F3C014A001643D9 /* Line_GL.fsh */,
+				6B0CA56A1F3C014A001643D9 /* Line_GLES.fsh */,
+				6B0CA56B1F3C014A001643D9 /* LinearBurnBlend_GL.fsh */,
+				6B0CA56C1F3C014A001643D9 /* LinearBurnBlend_GLES.fsh */,
+				6B0CA56D1F3C014A001643D9 /* LocalBinaryPattern_GL.fsh */,
+				6B0CA56E1F3C014A001643D9 /* LocalBinaryPattern_GLES.fsh */,
+				6B0CA56F1F3C014A001643D9 /* Lookup_GL.fsh */,
+				6B0CA5701F3C014A001643D9 /* Lookup_GLES.fsh */,
+				6B0CA5711F3C014A001643D9 /* Luminance_GL.fsh */,
+				6B0CA5721F3C014A001643D9 /* Luminance_GLES.fsh */,
+				6B0CA5731F3C014A001643D9 /* LuminanceRange_GL.fsh */,
+				6B0CA5741F3C014A001643D9 /* LuminanceRange_GLES.fsh */,
+				6B0CA5751F3C014A001643D9 /* LuminanceThreshold_GL.fsh */,
+				6B0CA5761F3C014A001643D9 /* LuminanceThreshold_GLES.fsh */,
+				6B0CA5771F3C014A001643D9 /* LuminosityBlend_GL.fsh */,
+				6B0CA5781F3C014A001643D9 /* LuminosityBlend_GLES.fsh */,
+				6B0CA5791F3C014A001643D9 /* Median_GL.fsh */,
+				6B0CA57A1F3C014A001643D9 /* Median_GLES.fsh */,
+				6B0CA57B1F3C014A001643D9 /* Monochrome_GL.fsh */,
+				6B0CA57C1F3C014A001643D9 /* Monochrome_GLES.fsh */,
+				6B0CA57D1F3C014A001643D9 /* MotionBlur.vsh */,
+				6B0CA57E1F3C014A001643D9 /* MotionBlur_GL.fsh */,
+				6B0CA57F1F3C014A001643D9 /* MotionBlur_GLES.fsh */,
+				6B0CA5801F3C014A001643D9 /* MotionComparison_GL.fsh */,
+				6B0CA5811F3C014A001643D9 /* MotionComparison_GLES.fsh */,
+				6B0CA5821F3C014A001643D9 /* MultiplyBlend_GL.fsh */,
+				6B0CA5831F3C014A001643D9 /* MultiplyBlend_GLES.fsh */,
+				6B0CA5841F3C014A001643D9 /* NearbyTexelSampling.vsh */,
+				6B0CA5851F3C014A001643D9 /* NobleCornerDetector_GL.fsh */,
+				6B0CA5861F3C014A001643D9 /* NobleCornerDetector_GLES.fsh */,
+				6B0CA5871F3C014A001643D9 /* NormalBlend_GL.fsh */,
+				6B0CA5881F3C014A001643D9 /* NormalBlend_GLES.fsh */,
+				6B0CA5891F3C014A001643D9 /* OneInput.vsh */,
+				6B0CA58A1F3C014A001643D9 /* Opacity_GL.fsh */,
+				6B0CA58B1F3C014A001643D9 /* Opacity_GLES.fsh */,
+				6B0CA58C1F3C014A001643D9 /* OverlayBlend_GL.fsh */,
+				6B0CA58D1F3C014A001643D9 /* OverlayBlend_GLES.fsh */,
+				6B0CA58E1F3C014A001643D9 /* Passthrough_GL.fsh */,
+				6B0CA58F1F3C014A001643D9 /* Passthrough_GLES.fsh */,
+				6B0CA5901F3C014A001643D9 /* PinchDistortion_GL.fsh */,
+				6B0CA5911F3C014A001643D9 /* PinchDistortion_GLES.fsh */,
+				6B0CA5921F3C014A001643D9 /* Pixellate_GL.fsh */,
+				6B0CA5931F3C014A001643D9 /* Pixellate_GLES.fsh */,
+				6B0CA5941F3C014A001643D9 /* PolarPixellate_GL.fsh */,
+				6B0CA5951F3C014A001643D9 /* PolarPixellate_GLES.fsh */,
+				6B0CA5961F3C014A001643D9 /* PolkaDot_GL.fsh */,
+				6B0CA5971F3C014A001643D9 /* PolkaDot_GLES.fsh */,
+				6B0CA5981F3C014A001643D9 /* Posterize_GL.fsh */,
+				6B0CA5991F3C014A001643D9 /* Posterize_GLES.fsh */,
+				6B0CA59A1F3C014A001643D9 /* PrewittEdgeDetection_GL.fsh */,
+				6B0CA59B1F3C014A001643D9 /* PrewittEdgeDetection_GLES.fsh */,
+				6B0CA59C1F3C014A001643D9 /* RGBAdjustment_GL.fsh */,
+				6B0CA59D1F3C014A001643D9 /* RGBAdjustment_GLES.fsh */,
+				6B0CA59E1F3C014A001643D9 /* Saturation_GL.fsh */,
+				6B0CA59F1F3C014A001643D9 /* Saturation_GLES.fsh */,
+				6B0CA5A01F3C014A001643D9 /* SaturationBlend_GL.fsh */,
+				6B0CA5A11F3C014A001643D9 /* SaturationBlend_GLES.fsh */,
+				6B0CA5A21F3C014A001643D9 /* ScreenBlend_GL.fsh */,
+				6B0CA5A31F3C014A001643D9 /* ScreenBlend_GLES.fsh */,
+				6B0CA5A41F3C014A001643D9 /* ShaderConverter.sh */,
+				6B0CA5A51F3C014A001643D9 /* Sharpen.vsh */,
+				6B0CA5A61F3C014A001643D9 /* Sharpen_GL.fsh */,
+				6B0CA5A71F3C014A001643D9 /* Sharpen_GLES.fsh */,
+				6B0CA5A81F3C014A001643D9 /* ShiTomasiFeatureDetector_GL.fsh */,
+				6B0CA5A91F3C014A001643D9 /* ShiTomasiFeatureDetector_GLES.fsh */,
+				6B0CA5AA1F3C014A001643D9 /* Sketch_GL.fsh */,
+				6B0CA5AB1F3C014A001643D9 /* Sketch_GLES.fsh */,
+				6B0CA5AC1F3C014A001643D9 /* SobelEdgeDetection_GL.fsh */,
+				6B0CA5AD1F3C014A001643D9 /* SobelEdgeDetection_GLES.fsh */,
+				6B0CA5AE1F3C014A001643D9 /* SoftLightBlend_GL.fsh */,
+				6B0CA5AF1F3C014A001643D9 /* SoftLightBlend_GLES.fsh */,
+				6B0CA5B01F3C014A001643D9 /* Solarize_GL.fsh */,
+				6B0CA5B11F3C014A001643D9 /* Solarize_GLES.fsh */,
+				6B0CA5B21F3C014A001643D9 /* SourceOverBlend_GL.fsh */,
+				6B0CA5B31F3C014A001643D9 /* SourceOverBlend_GLES.fsh */,
+				6B0CA5B41F3C014A001643D9 /* SphereRefraction_GL.fsh */,
+				6B0CA5B51F3C014A001643D9 /* SphereRefraction_GLES.fsh */,
+				6B0CA5B61F3C014A001643D9 /* StretchDistortion_GL.fsh */,
+				6B0CA5B71F3C014A001643D9 /* StretchDistortion_GLES.fsh */,
+				6B0CA5B81F3C014A001643D9 /* SubtractBlend_GL.fsh */,
+				6B0CA5B91F3C014A001643D9 /* SubtractBlend_GLES.fsh */,
+				6B0CA5BA1F3C014A001643D9 /* Swirl_GL.fsh */,
+				6B0CA5BB1F3C014A001643D9 /* Swirl_GLES.fsh */,
+				6B0CA5BC1F3C014A001643D9 /* ThreeInput.vsh */,
+				6B0CA5BD1F3C014A001643D9 /* ThresholdEdgeDetection_GL.fsh */,
+				6B0CA5BE1F3C014A001643D9 /* ThresholdEdgeDetection_GLES.fsh */,
+				6B0CA5BF1F3C014A001643D9 /* ThresholdedNonMaximumSuppression_GL.fsh */,
+				6B0CA5C01F3C014A001643D9 /* ThresholdedNonMaximumSuppression_GLES.fsh */,
+				6B0CA5C11F3C014A001643D9 /* ThresholdSketch_GL.fsh */,
+				6B0CA5C21F3C014A001643D9 /* ThresholdSketch_GLES.fsh */,
+				6B0CA5C31F3C014A001643D9 /* TiltShift_GL.fsh */,
+				6B0CA5C41F3C014A001643D9 /* TiltShift_GLES.fsh */,
+				6B0CA5C51F3C014A001643D9 /* Toon_GL.fsh */,
+				6B0CA5C61F3C014A001643D9 /* Toon_GLES.fsh */,
+				6B0CA5C71F3C014A001643D9 /* Transform.vsh */,
+				6B0CA5C81F3C014A001643D9 /* TwoInput.vsh */,
+				6B0CA5C91F3C014A001643D9 /* UnsharpMask_GL.fsh */,
+				6B0CA5CA1F3C014A001643D9 /* UnsharpMask_GLES.fsh */,
+				6B0CA5CB1F3C014A001643D9 /* Vibrance_GL.fsh */,
+				6B0CA5CC1F3C014A001643D9 /* Vibrance_GLES.fsh */,
+				6B0CA5CD1F3C014A001643D9 /* Vignette_GL.fsh */,
+				6B0CA5CE1F3C014A001643D9 /* Vignette_GLES.fsh */,
+				6B0CA5CF1F3C014A001643D9 /* WeakPixelInclusion_GL.fsh */,
+				6B0CA5D01F3C014A001643D9 /* WeakPixelInclusion_GLES.fsh */,
+				6B0CA5D11F3C014A001643D9 /* WhiteBalance_GL.fsh */,
+				6B0CA5D21F3C014A001643D9 /* WhiteBalance_GLES.fsh */,
+				6B0CA5D31F3C014A001643D9 /* XYDerivative_GL.fsh */,
+				6B0CA5D41F3C014A001643D9 /* XYDerivative_GLES.fsh */,
+				6B0CA5D51F3C014A001643D9 /* YUVConversionFullRange_GL.fsh */,
+				6B0CA5D61F3C014A001643D9 /* YUVConversionFullRange_GLES.fsh */,
+				6B0CA5D71F3C014A001643D9 /* YUVConversionFullRangeUVPlanar_GL.fsh */,
+				6B0CA5D81F3C014A001643D9 /* YUVConversionFullRangeUVPlanar_GLES.fsh */,
+				6B0CA5D91F3C014A001643D9 /* YUVConversionVideoRange_GL.fsh */,
+				6B0CA5DA1F3C014A001643D9 /* YUVConversionVideoRange_GLES.fsh */,
+				6B0CA5DB1F3C014A001643D9 /* ZoomBlur_GL.fsh */,
+				6B0CA5DC1F3C014A001643D9 /* ZoomBlur_GLES.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		6B0CA6031F3C0264001643D9 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CA6041F3C0280001643D9 /* GPUViewController.swift */,
+			);
+			path = GPUImage;
 			sourceTree = "<group>";
 		};
 		6B191EEE1ECD4E0F00C21065 = {
@@ -449,6 +1476,7 @@
 				6B3A95801ECD57A100A84749 /* Podfile */,
 				6B191EF91ECD4E0F00C21065 /* LZJ_Coin */,
 				6B3A958C1ECD891E00A84749 /* LZJ_ShowCoin */,
+				6BA88CB31F3057B300376FD5 /* LZJ_CoinTests */,
 				6B191EF81ECD4E0F00C21065 /* Products */,
 				530AC2007197E3371A05DE89 /* Pods */,
 				96DD4470BDB8DF6E2A18592E /* Frameworks */,
@@ -460,6 +1488,7 @@
 			children = (
 				6B191EF71ECD4E0F00C21065 /* LZJ_Coin.app */,
 				6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */,
+				6BA88CB21F3057B300376FD5 /* LZJ_CoinTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -467,6 +1496,7 @@
 		6B191EF91ECD4E0F00C21065 /* LZJ_Coin */ = {
 			isa = PBXGroup;
 			children = (
+				6B0CA6071F3C11A5001643D9 /* food1.jpg */,
 				6B76898B1EE92965006139BB /* Resource */,
 				6B3A957B1ECD4FD800A84749 /* Section */,
 				6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */,
@@ -482,6 +1512,7 @@
 		6B3A957B1ECD4FD800A84749 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				6B0CA6031F3C0264001643D9 /* GPUImage */,
 				6BE9185E1F1F49AA006AB298 /* Gravity */,
 				6B4C1B561F0383B7008DAE09 /* UIShow */,
 				6B6942E11EEA3E9600A6B4AB /* Manager */,
@@ -548,6 +1579,7 @@
 		6B76898B1EE92965006139BB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6B0CA6061F3C077F001643D9 /* 1024.png */,
 				6B9088E81EFBA5B000D7B7F8 /* png */,
 				6B9088D41EFB632700D7B7F8 /* 爱情废柴-周杰伦-周杰伦的床边故事.mp3 */,
 				6B9088D61EFB632700D7B7F8 /* 枫-周杰伦-十一月的萧邦.mp3 */,
@@ -730,6 +1762,15 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		6BA88CB31F3057B300376FD5 /* LZJ_CoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BA88CB41F3057B300376FD5 /* LZJ_CoinTests.swift */,
+				6BA88CB61F3057B300376FD5 /* Info.plist */,
+			);
+			path = LZJ_CoinTests;
+			sourceTree = "<group>";
+		};
 		6BCBAA581ED3D160008DDA55 /* JuBi */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,10 +1790,13 @@
 		96DD4470BDB8DF6E2A18592E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B0CA4481F3C014A001643D9 /* Source */,
+				6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */,
 				6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */,
 				9E86D2AE4668847C757E0CF8 /* Pods_LZJ_Coin.framework */,
 				6B3A958A1ECD891E00A84749 /* NotificationCenter.framework */,
 				5584BF9BB5510CCE3E5182EC /* Pods_LZJ_ShowCoin.framework */,
+				1D877CA550B5A3D6005BA802 /* Pods_LZJ_Coin_LZJ_CoinTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -771,10 +1815,12 @@
 				1C1D164FC926ABF1BFA85E0C /* [CP] Embed Pods Frameworks */,
 				5963E9EA2395AF5EEECF25B3 /* [CP] Copy Pods Resources */,
 				6B3A95991ECD891E00A84749 /* Embed App Extensions */,
+				6B0CA4461F3BFF7A001643D9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6B0CA4441F3BFF45001643D9 /* PBXTargetDependency */,
 				6B3A95941ECD891E00A84749 /* PBXTargetDependency */,
 			);
 			name = LZJ_Coin;
@@ -800,6 +1846,27 @@
 			productName = LZJ_ShowCoin;
 			productReference = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		6BA88CB11F3057B300376FD5 /* LZJ_CoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BA88CBB1F3057B300376FD5 /* Build configuration list for PBXNativeTarget "LZJ_CoinTests" */;
+			buildPhases = (
+				56D2982667E6D84EC44119D3 /* [CP] Check Pods Manifest.lock */,
+				6BA88CAE1F3057B300376FD5 /* Sources */,
+				6BA88CAF1F3057B300376FD5 /* Frameworks */,
+				6BA88CB01F3057B300376FD5 /* Resources */,
+				F81E1F1C0F310FE7B3EDD9D3 /* [CP] Embed Pods Frameworks */,
+				ED210CB44605EAC7C1B53139 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BA88CB81F3057B300376FD5 /* PBXTargetDependency */,
+			);
+			name = LZJ_CoinTests;
+			productName = LZJ_CoinTests;
+			productReference = 6BA88CB21F3057B300376FD5 /* LZJ_CoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -831,6 +1898,12 @@
 							};
 						};
 					};
+					6BA88CB11F3057B300376FD5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8GTQ22BPX6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6B191EF61ECD4E0F00C21065;
+					};
 				};
 			};
 			buildConfigurationList = 6B191EF21ECD4E0F00C21065 /* Build configuration list for PBXProject "LZJ_Coin" */;
@@ -844,19 +1917,59 @@
 			mainGroup = 6B191EEE1ECD4E0F00C21065;
 			productRefGroup = 6B191EF81ECD4E0F00C21065 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6B0CA4351F3BFF2B001643D9 /* Products */;
+					ProjectRef = 6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6B191EF61ECD4E0F00C21065 /* LZJ_Coin */,
 				6B3A95881ECD891E00A84749 /* LZJ_ShowCoin */,
+				6BA88CB11F3057B300376FD5 /* LZJ_CoinTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6B0CA43C1F3BFF2B001643D9 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 6B0CA43B1F3BFF2B001643D9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B0CA43E1F3BFF2B001643D9 /* GPUImageTests_macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_macOS.xctest;
+			remoteRef = 6B0CA43D1F3BFF2B001643D9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B0CA4401F3BFF2B001643D9 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 6B0CA43F1F3BFF2B001643D9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B0CA4421F3BFF2B001643D9 /* GPUImageTests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_iOS.xctest;
+			remoteRef = 6B0CA4411F3BFF2B001643D9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6B191EF51ECD4E0F00C21065 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0CA6091F3C120E001643D9 /* 1024.png in Resources */,
+				6B0CA6081F3C120B001643D9 /* food1.jpg in Resources */,
 				6B9089A01EFBA5B000D7B7F8 /* 038-rotate-1.png in Resources */,
 				6B9089B91EFBA5B000D7B7F8 /* 063-monitor-1.png in Resources */,
 				6B6942E51EEA7A7500A6B4AB /* 好兄弟.mp3 in Resources */,
@@ -1032,6 +2145,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BA88CB01F3057B300376FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1048,6 +2168,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_Coin/Pods-LZJ_Coin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56D2982667E6D84EC44119D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5963E9EA2395AF5EEECF25B3 /* [CP] Copy Pods Resources */ = {
@@ -1110,6 +2245,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		ED210CB44605EAC7C1B53139 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_Coin-LZJ_CoinTests/Pods-LZJ_Coin-LZJ_CoinTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81E1F1C0F310FE7B3EDD9D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZJ_Coin-LZJ_CoinTests/Pods-LZJ_Coin-LZJ_CoinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1125,6 +2290,7 @@
 				6B5183AE1F1720AE00657E56 /* ArticleViewController.swift in Sources */,
 				6B191EFB1ECD4E0F00C21065 /* AppDelegate.swift in Sources */,
 				6B97617D1ED6A67C001E11B4 /* NewsViewController.swift in Sources */,
+				6B0CA6051F3C0280001643D9 /* GPUViewController.swift in Sources */,
 				6B4C1B581F0383D6008DAE09 /* LoadingViewController.swift in Sources */,
 				6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */,
 				6BCBAA5A1ED3D168008DDA55 /* JuBiCoin.swift in Sources */,
@@ -1140,13 +2306,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BA88CAE1F3057B300376FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA88CB51F3057B300376FD5 /* LZJ_CoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6B0CA4441F3BFF45001643D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = 6B0CA4431F3BFF45001643D9 /* PBXContainerItemProxy */;
+		};
 		6B3A95941ECD891E00A84749 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6B3A95881ECD891E00A84749 /* LZJ_ShowCoin */;
 			targetProxy = 6B3A95931ECD891E00A84749 /* PBXContainerItemProxy */;
+		};
+		6BA88CB81F3057B300376FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B191EF61ECD4E0F00C21065 /* LZJ_Coin */;
+			targetProxy = 6BA88CB71F3057B300376FD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1341,6 +2525,36 @@
 			};
 			name = Release;
 		};
+		6BA88CB91F3057B300376FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15475CB0B5D1D76324E73D42 /* Pods-LZJ_Coin-LZJ_CoinTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8GTQ22BPX6;
+				INFOPLIST_FILE = LZJ_CoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "party.lzj.LZJ-CoinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZJ_Coin.app/LZJ_Coin";
+			};
+			name = Debug;
+		};
+		6BA88CBA1F3057B300376FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810DA32793E2544933B566A7 /* Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8GTQ22BPX6;
+				INFOPLIST_FILE = LZJ_CoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "party.lzj.LZJ-CoinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZJ_Coin.app/LZJ_Coin";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1367,6 +2581,15 @@
 			buildConfigurations = (
 				6B3A95971ECD891E00A84749 /* Debug */,
 				6B3A95981ECD891E00A84749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BA88CBB1F3057B300376FD5 /* Build configuration list for PBXNativeTarget "LZJ_CoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BA88CB91F3057B300376FD5 /* Debug */,
+				6BA88CBA1F3057B300376FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

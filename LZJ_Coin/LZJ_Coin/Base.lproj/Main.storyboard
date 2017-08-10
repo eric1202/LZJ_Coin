@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rzv-ik-pyT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rzv-ik-pyT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -161,6 +160,11 @@
                                     <action selector="toUIShowList:" destination="BYZ-38-t0r" id="Q0i-tS-Z40"/>
                                 </connections>
                             </barButtonItem>
+                            <barButtonItem title="GPU" id="67c-Xl-Zw3">
+                                <connections>
+                                    <segue destination="1iF-vZ-Txp" kind="show" id="fi6-Ca-ZN1"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -191,7 +195,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Tj-nY-zbC">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="72.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="344" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -232,7 +236,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="75.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHQ-tm-WDT">
-                                        <rect key="frame" x="146.5" y="0.0" width="82" height="41"/>
+                                        <rect key="frame" x="147.5" y="0.0" width="80.5" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" red="0.0" green="0.2901960784" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -267,6 +271,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Pk-6g-Dz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2808.8000000000002" y="-157.87106446776613"/>
+        </scene>
+        <!--GPU-->
+        <scene sceneID="yqB-c3-9jR">
+            <objects>
+                <viewController title="GPU" id="1iF-vZ-Txp" customClass="GPUViewController" customModule="LZJ_Coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XAH-xb-Rap"/>
+                        <viewControllerLayoutGuide type="bottom" id="WTo-3d-9Xl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yr6-P9-xs0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDd-Qf-gb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3562" y="-158"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8T7-1e-93h">
@@ -305,7 +327,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rzv-ik-pyT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VOZ-Rt-1Hh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOZ-Rt-1Hh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.33725490196078434" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>

@@ -13,9 +13,11 @@ PODS:
     - LeanCloud/Storage (= 10.1.0)
   - LeanCloud/Storage (10.1.0):
     - Alamofire (~> 4.5)
+  - Nimble (7.0.1)
   - NVActivityIndicatorView (3.7.0):
     - NVActivityIndicatorView/Presenter (= 3.7.0)
   - NVActivityIndicatorView/Presenter (3.7.0)
+  - Quick (1.1.0)
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
   - RxSwift (3.6.1)
@@ -31,7 +33,9 @@ DEPENDENCIES:
   - HandyJSON
   - Kingfisher
   - LeanCloud (~> 10.1.0)
+  - Nimble
   - NVActivityIndicatorView
+  - Quick
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SnapKit (~> 3.2.0)
@@ -55,13 +59,15 @@ SPEC CHECKSUMS:
   HandyJSON: e7ad0483005826baba1d1c251cd98d0aa8bd8cce
   Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
   LeanCloud: 2a6ac9da4fcf4b6b26f519d05a31998ddc59223a
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 6ab2f19aa12e3475dbfe31da01c725b22f13ab8b
+PODFILE CHECKSUM: e67765654ac12c849a84a99b69b89696159372f4
 
 COCOAPODS: 1.2.1
