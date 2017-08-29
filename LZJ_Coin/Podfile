@@ -14,6 +14,7 @@ pod 'Kingfisher'
 pod 'NVActivityIndicatorView'
 pod 'Then', '~> 2.1'
 pod 'LeanCloud','~> 10.1.0'
+pod 'XCGLogger', '~> 5.0.1'
 
 target 'LZJ_CoinTests'  do
     pod 'Quick'

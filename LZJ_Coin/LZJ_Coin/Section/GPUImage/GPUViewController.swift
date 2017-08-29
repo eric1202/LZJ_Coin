@@ -67,8 +67,11 @@ class GPUViewController: UIViewController {
         let exposureAdjustment = ExposureAdjustment()
         exposureAdjustment.exposure = 0.5
 
-        let posterize = Haze()
-        posterize.distance = 0.6
+        let posterize = EmbossFilter()
+        posterize.intensity = 2
+
+        let beautifyShader = try? String.init(contentsOfFile: Bundle.main.path(forResource: "beauty", ofType: "txt")!)
+        let beautifyAjustment = BasicOperation.init(fragmentShader: beautifyShader! , numberOfInputs: 3)
 
         // 2.使用管道处理
         // 创建图片输入
@@ -97,7 +100,7 @@ class GPUViewController: UIViewController {
         }
         // 绑定处理链
 //        pictureInput --> brightnessAdjustment --> exposureAdjustment --> pictureOutput
-        pictureInput --> brightnessAdjustment --> posterize --> pictureOutput
+        pictureInput --> posterize --> pictureOutput
         // 开始处理 synchronously: true 同步执行 false 异步执行，处理完毕后会调用imageAvailableCallback这个闭包
         pictureInput.processImage(synchronously: true)
     }
@@ -155,6 +158,11 @@ class GPUViewController: UIViewController {
         renderView = RenderView(frame: view.bounds)
         view.addSubview(renderView)
 
+        let posterize = EmbossFilter()
+        posterize.intensity = 2
+
+        basicOperation = posterize
+
         // 绑定处理链
         camera --> basicOperation --> renderView
 
@@ -169,4 +177,5 @@ class GPUViewController: UIViewController {
         NSLog("gpu view controller deinit")
 
     }
+
 }

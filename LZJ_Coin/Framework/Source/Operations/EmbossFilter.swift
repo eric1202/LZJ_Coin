@@ -14,3 +14,4 @@ public class EmbossFilter : Convolution3x3 {
         ({intensity = 1.0})()
     }
 }
+

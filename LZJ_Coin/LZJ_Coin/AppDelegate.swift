@@ -11,7 +11,7 @@ import Bugly
 import AVFoundation
 import LeanCloud
 import Alamofire
-
+import XCGLogger
 
 enum MAINCOLOR :String{
     case first = "004a7c"
@@ -21,12 +21,12 @@ enum MAINCOLOR :String{
 
 }
 
+let log = XCGLogger.default
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
     var timer:Timer?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -34,6 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Bugly.start(withAppId: "2c3f462d93")
 
 
+        log.setup(level: .debug, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: "path/to/file", fileLevel: .debug)
+//
+//        log.verbose("A verbose message, usually useful when working on a specific problem")
+//        log.debug("A debug message")
+//        log.info("An info message, probably useful to power users looking in console.app")
+//        log.warning("A warning message, may indicate a possible error")
+//        log.error("An error occurred, but it's recoverable, just info about what happened")
+//        log.severe("A severe error occurred, we are likely about to crash now")
         return true
     }
 

@@ -27,6 +27,7 @@
 		6B3A958E1ECD891E00A84749 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A958D1ECD891E00A84749 /* TodayViewController.swift */; };
 		6B3A95911ECD891E00A84749 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A958F1ECD891E00A84749 /* MainInterface.storyboard */; };
 		6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6B3E9CB71F3D894B00753A03 /* beauty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E9CB61F3D894B00753A03 /* beauty.txt */; };
 		6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4095AD1ECEA13A00230FE1 /* ChartView.swift */; };
 		6B4C1B581F0383D6008DAE09 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C1B571F0383D6008DAE09 /* LoadingViewController.swift */; };
 		6B5183AE1F1720AE00657E56 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5183AD1F1720AE00657E56 /* ArticleViewController.swift */; };
@@ -737,6 +738,7 @@
 		6B3A95901ECD891E00A84749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6B3A95921ECD891E00A84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
+		6B3E9CB61F3D894B00753A03 /* beauty.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = beauty.txt; sourceTree = "<group>"; };
 		6B4095AD1ECEA13A00230FE1 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		6B4C1B571F0383D6008DAE09 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		6B5183AD1F1720AE00657E56 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
@@ -906,6 +908,7 @@
 		6BA88CB41F3057B300376FD5 /* LZJ_CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZJ_CoinTests.swift; sourceTree = "<group>"; };
 		6BA88CB61F3057B300376FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6BB3C2021F4150B500D71678 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		6BCBAA591ED3D168008DDA55 /* JuBiCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuBiCoin.swift; sourceTree = "<group>"; };
 		6BE9185F1F1F49BF006AB298 /* GravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
 		810DA32793E2544933B566A7 /* Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZJ_Coin-LZJ_CoinTests/Pods-LZJ_Coin-LZJ_CoinTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1595,6 +1598,7 @@
 				6B76898D1EE92987006139BB /* Hotel California.mp3 */,
 				6B9A87B41EF1476000CF5383 /* dingwei.gpx */,
 				6B0066591EF25AE5004DFA87 /* 成都-赵雷-成都.mp3 */,
+				6B3E9CB61F3D894B00753A03 /* beauty.txt */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1790,6 +1794,7 @@
 		96DD4470BDB8DF6E2A18592E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BB3C2021F4150B500D71678 /* CoreAudioKit.framework */,
 				6B0CA4481F3C014A001643D9 /* Source */,
 				6B0CA4341F3BFF2B001643D9 /* GPUImage.xcodeproj */,
 				6BAAA98B1F09EDBB003FAE68 /* MediaPlayer.framework */,
@@ -2007,6 +2012,7 @@
 				6B9089AF1EFBA5B000D7B7F8 /* 053-phone-call-4.png in Resources */,
 				6B9089891EFBA5B000D7B7F8 /* 015-upload-1.png in Resources */,
 				6B908A091EFBA5B100D7B7F8 /* 143-warning-1.png in Resources */,
+				6B3E9CB71F3D894B00753A03 /* beauty.txt in Resources */,
 				6B908A031EFBA5B100D7B7F8 /* 137-anchor.png in Resources */,
 				6B9089D01EFBA5B000D7B7F8 /* 086-home.png in Resources */,
 				6B9089881EFBA5B000D7B7F8 /* 014-upload-2.png in Resources */,

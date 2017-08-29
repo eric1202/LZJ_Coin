@@ -15,24 +15,25 @@ class GravityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "重力沙丘"
         animator = UIDynamicAnimator.init(referenceView: self.view)
         motionMgr = CMMotionManager.init()
 
         var vs = [UIView]()
 
-        for i in 0..<10{
-            let random = arc4random()%30
-            let v = UIImageView.init(frame: CGRect.init(x: 10 * i, y:(Int(10+15*random)), width: 10+10*i, height: 10+10*i))
-            v.image = UIImage.init(named: "032-star")
-
-//            let r = arc4random()%255
-//            let g = arc4random()%255
-//            let b = arc4random()%255
-//            v.backgroundColor = UIColor.init(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1)
-
+        for _ in 0..<200{
+            let random :Int = Int(arc4random()%14) + 1
+            let v = UIView.init(frame: CGRect.init(x: 10 * random, y:(10+15*random), width: random, height: random))
+            v.layer.masksToBounds = true
+            v.layer.cornerRadius = CGFloat(random)/2.0
+            let r = arc4random()%155
+            let g = arc4random()%155
+            let b = arc4random()%155
+            v.backgroundColor = UIColor.init(red: CGFloat(r+8)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b+99)/255.0, alpha: 1)
             self.view .addSubview(v)
             vs .append(v)
         }
+
 
         let itemBehavior = UIDynamicItemBehavior.init(items:vs)
         animator.addBehavior(itemBehavior)
@@ -45,8 +46,27 @@ class GravityViewController: UIViewController {
         let collisionBehavior = UICollisionBehavior.init(items: vs)
         collisionBehavior.translatesReferenceBoundsIntoBoundary = true;
 
+        //框
+        let leftV = UIView.init(frame: CGRect.init(x: 40, y: 300, width: 2, height: 100))
+        leftV.backgroundColor = UIColor.blue
+        self.view.addSubview(leftV)
+
+
+        let middleV = UIView.init(frame: CGRect.init(x: 40, y: 400, width: 100, height: 2))
+        middleV.backgroundColor = UIColor.orange
+        self.view.addSubview(middleV)
+
+
+        let rightV = UIView.init(frame: CGRect.init(x: 140, y: 300, width: 2, height: 100))
+        rightV.backgroundColor = UIColor.cyan
+        self.view.addSubview(rightV)
+
+        collisionBehavior.addBoundary(withIdentifier: "right" as NSCopying, for: UIBezierPath.init(rect: rightV.frame))
+        collisionBehavior.addBoundary(withIdentifier: "middle" as NSCopying, for: UIBezierPath.init(rect: middleV.frame))
+        collisionBehavior.addBoundary(withIdentifier: "left" as NSCopying, for: UIBezierPath.init(rect: leftV.frame))
 
         animator.addBehavior(collisionBehavior)
+
 
         motionMgr .startDeviceMotionUpdates(to: OperationQueue.main) { (cm, error) in
             NSLog("device update : %@", cm?.attitude.description ?? "nothing")
