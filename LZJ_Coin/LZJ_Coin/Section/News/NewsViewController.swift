@@ -17,7 +17,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
     @IBOutlet weak var bigLbl: UILabel!
     @IBOutlet weak var subLbl: UILabel!
 
-    let newsURL = "https://toutiao.com/api/article/recent/?source=2&category=news_hot&as=A1D5D87595C3287"
+    let newsURL = "https://api.douban.com/v2/movie/in_theaters"
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -31,8 +31,8 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         self.tableView.estimatedRowHeight = 44
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.automaticallyAdjustsScrollViewInsets = false
-        bigLbl.text = "News"
-        subLbl.text = "some hot news"
+        bigLbl.text = "豆瓣电影"
+        subLbl.text = "some hot movies"
 
 
         self.getNews()
@@ -42,7 +42,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         Alamofire.request(newsURL).responseJSON { (res) in
             if let result : Dictionary = res.value as? Dictionary<String,AnyObject>{
 //                let data = JSON(result)["data"] as Array!
-                for i in JSON(result)["data"]{
+                for i in JSON(result)["subjects"]{
                     self.messages .append(i.1)
                     self.tableView .reloadData()
                 }
@@ -62,10 +62,10 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let cell = NewsTableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier:"cell")
 
         let d = self.messages[indexPath.row] as! JSON
-        cell.textLabel?.text = d["abstract"].stringValue
+        cell.textLabel?.text = d["title"].stringValue + d["genres"].description + d["rating"]["average"].stringValue
         cell.textLabel?.numberOfLines = 0
 
-        let url = URL(string: d["media_avatar_url"].stringValue)
+        let url = URL(string: d["images"]["medium"].stringValue)
         cell.imageV?.kf.setImage(with:url )
 
         return cell
@@ -76,7 +76,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         cell?.setSelected(false, animated: false)
 
         let data = self.messages[indexPath.row] as! JSON
-        let url = data["display_url"]
+        let url = data["alt"]
         let title = data["title"]
 
         let vc = UIViewController.init()
