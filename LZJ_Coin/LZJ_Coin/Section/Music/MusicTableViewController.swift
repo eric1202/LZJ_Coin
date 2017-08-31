@@ -9,6 +9,7 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
+import Spruce
 
 class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
 
@@ -19,6 +20,7 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
         super.viewDidLoad()
         //setup the remote control
         self.setupRemoteControl()
+
 
         //load local music
 
@@ -42,6 +44,8 @@ class MusicTableViewController: UITableViewController,AVAudioPlayerDelegate {
         datas = results!
 
         tableView.reloadData()
+        self.tableView.spruce.animate([StockAnimation.contract(Scale.moderately)], sortFunction:LinearSortFunction(direction: .topToBottom, interObjectDelay: 0.15))
+
 
     }
 

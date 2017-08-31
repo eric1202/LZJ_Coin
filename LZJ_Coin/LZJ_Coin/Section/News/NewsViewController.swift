@@ -11,7 +11,7 @@ import SnapKit
 import SwiftyJSON
 import Alamofire
 import Kingfisher
-
+import Spruce
 class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var bigLbl: UILabel!
@@ -86,6 +86,10 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         webView.loadRequest(URLRequest.init(url: URL.init(string: url.stringValue)!))
 
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.contentView.spruce.animate([StockAnimation.fadeIn],sortFunction:LinearSortFunction.init(direction: Direction.bottomToTop, interObjectDelay: 0.9))
     }
 
 }

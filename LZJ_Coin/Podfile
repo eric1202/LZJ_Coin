@@ -15,6 +15,7 @@ pod 'NVActivityIndicatorView'
 pod 'Then', '~> 2.1'
 pod 'LeanCloud','~> 10.1.0'
 pod 'XCGLogger', '~> 5.0.1'
+pod "Spruce", '~> 1.0.0'
 
 target 'LZJ_CoinTests'  do
     pod 'Quick'

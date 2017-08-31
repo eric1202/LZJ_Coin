@@ -25,6 +25,7 @@ PODS:
     - RxSwift (~> 3.6)
   - RxSwift (3.6.1)
   - SnapKit (3.2.0)
+  - Spruce (1.0.0)
   - SwiftyJSON (3.1.4)
   - Then (2.1.0)
   - XCGLogger (5.0.1):
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SnapKit (~> 3.2.0)
+  - Spruce (~> 1.0.0)
   - SwiftyJSON
   - Then (~> 2.1)
   - XCGLogger (~> 5.0.1)
@@ -74,10 +76,11 @@ SPEC CHECKSUMS:
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
   XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
 
-PODFILE CHECKSUM: 89d52a63e15b3aa76b9ae7e94d4bea1e4d29922a
+PODFILE CHECKSUM: 86837b382b3801498d7ddaacf0e38619d8c026ed
 
 COCOAPODS: 1.2.1

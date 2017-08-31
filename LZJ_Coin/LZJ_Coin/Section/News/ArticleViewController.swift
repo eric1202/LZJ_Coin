@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Spruce
 
 class ArticleViewController: UIViewController {
 
@@ -35,6 +36,9 @@ class ArticleViewController: UIViewController {
             self.title = data["title"] as? String
             self.view.addSubview(textView)
 
+            self.view.spruce.animate([StockAnimation.fadeIn], duration: 1, animationType: StandardAnimation.init(duration: 1), completion: { (b) in
+                NSLog("loading spruce!")
+            })
 
         }
     }
