@@ -8,12 +8,15 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class AppHelper: NSObject {
 
     var player:AVQueuePlayer?
 
     var musics = [String]()
+
+    var realmManager = try? Realm.init(configuration: Realm.Configuration.defaultConfiguration) 
 
     static let sharedInstance: AppHelper = {
         let instance = AppHelper()
@@ -23,6 +26,19 @@ class AppHelper: NSObject {
         return instance
     }()
 
+    func test() -> () {
+
+
+//        log.info("did test function")
+//        let liter = LTCoin()
+//        liter.endPrice = 113
+//        liter.highPrice = 200
+//        liter.lowPrice = 23
+//        liter.tradeVolume = 1100
+
+
+
+    }
 
     func readyToPlay() {
         guard let player = self.player else {

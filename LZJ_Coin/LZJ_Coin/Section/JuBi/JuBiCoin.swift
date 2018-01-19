@@ -11,9 +11,9 @@ import Alamofire
 class JuBiCoin: NSObject {
     enum CoinType : String{
         case IFC = "ifc"
-        case DOGE = "doge"
+        case EOS = "eos"
         case XRP = "xrp"
-        case BTS = "bts"
+        case NEO = "neo"
     }
 
     var highPrice = 0.0
@@ -25,19 +25,19 @@ class JuBiCoin: NSObject {
 
 
    class func getTicker(type:CoinType,completion:@escaping ((_ result:JuBiCoin?,_ error:NSError?)->())) -> () {
-        let url = String.init(format: "https://www.jubi.com/api/v1/ticker/?coin=%@", type.rawValue)
+        let url = String.init(format: "https://www.okex.com/api/v1/ticker.do?symbol=%@_usdt", type.rawValue)
         Alamofire.request(url).responseJSON { (res) in
             if let err = res.error{
                 completion(nil,err as NSError)
             }else{
                 if let result : Dictionary = res.value as? Dictionary<String,AnyObject>{
                     let coin = JuBiCoin.init()
-                    coin.highPrice = Double(result["high"]! as! String)!
-                    coin.lowPrice = Double(result["low"]! as! String)!
-                    coin.buyPrice = Double(result["buy"]! as! String)!
-                    coin.sellPrice = Double(result["sell"]! as! String)!
-                    coin.lastPrice = Double(result["last"]! as! String)!
-                    coin.vol = Double(result["vol"]! as! NSNumber)
+                    coin.highPrice = Double(result["ticker"]!["high"]! as! String)!
+                    coin.lowPrice = Double(result["ticker"]!["low"]! as! String)!
+                    coin.buyPrice = Double(result["ticker"]!["buy"]! as! String)!
+                    coin.sellPrice = Double(result["ticker"]!["sell"]! as! String)!
+                    coin.lastPrice = Double(result["ticker"]!["last"]! as! String)!
+                    coin.vol = Double(result["ticker"]!["vol"]! as! String)!
 
                     completion(coin,nil)
                 }

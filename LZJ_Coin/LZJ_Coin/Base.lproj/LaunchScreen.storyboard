@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Farah.ttc">
+            <string>Farah</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,10 +28,10 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-aR-JYM">
                                 <rect key="frame" x="10" y="120" width="355" height="427"/>
-                                <mutableString key="text">上面通过block回掉的了ConstraintMaker类，ConstraintMaker这个类包含了第一次的点语法所要使用的属性。每个属性是属于ConstraintDescriptionExtendable协议的，这样是为了实现get方法的能返回对象用来做下一次的点语法,get方法过程中会实例化下一个对象和传入类型并进行储存。(协议可以处理返回逻辑但不必知道具体返回什么类型，只要你继承协议就可以了，所以这样通过性非常大只要你是用于返回都可以使用)。
+                                <string key="text">上面通过block回掉的了ConstraintMaker类，ConstraintMaker这个类包含了第一次的点语法所要使用的属性。每个属性是属于ConstraintDescriptionExtendable协议的，这样是为了实现get方法的能返回对象用来做下一次的点语法,get方法过程中会实例化下一个对象和传入类型并进行储存。(协议可以处理返回逻辑但不必知道具体返回什么类型，只要你继承协议就可以了，所以这样通过性非常大只要你是用于返回都可以使用)。
 
-通过block返回了ConstraintMaker类在调用这个类中的属性返回ConstraintDescription类，这个过程我称之为第一级。这一过程实际就是将ConstraintAttributes类中的normal存入到ConstraintDescription类中</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+通过block返回了ConstraintMaker类在调用这个类中的属性返回ConstraintDescription类，这个过程我称之为第一级。这一过程实际就是将ConstraintAttributes类中的normal存入到ConstraintDescription类中</string>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

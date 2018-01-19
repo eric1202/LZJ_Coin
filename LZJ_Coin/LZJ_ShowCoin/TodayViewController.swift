@@ -31,7 +31,7 @@ class TodayViewController: UIViewController, NCWidgetProviding{
 
         //http requset
         DispatchQueue.global().async {
-            let url = URL(string:"https://www.okcoin.cn/api/v1/ticker.do?symbol=ltc_cny")
+            let url = URL(string:"https://www.okex.com/api/v1/ticker.do?symbol=eos_usdt")
             //默认的会话配置
             let config = URLSessionConfiguration.default
             let request = URLRequest(url: url!)

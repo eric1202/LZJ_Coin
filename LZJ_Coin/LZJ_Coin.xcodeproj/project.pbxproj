@@ -29,6 +29,7 @@
 		6B3A95951ECD891E00A84749 /* LZJ_ShowCoin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B3A95891ECD891E00A84749 /* LZJ_ShowCoin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6B3E9CB71F3D894B00753A03 /* beauty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E9CB61F3D894B00753A03 /* beauty.txt */; };
 		6B4095AE1ECEA13A00230FE1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4095AD1ECEA13A00230FE1 /* ChartView.swift */; };
+		6B4A90C61F5D2A5C001E4D9A /* FristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A90C51F5D2A5C001E4D9A /* FristViewController.swift */; };
 		6B4C1B581F0383D6008DAE09 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C1B571F0383D6008DAE09 /* LoadingViewController.swift */; };
 		6B5183AE1F1720AE00657E56 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5183AD1F1720AE00657E56 /* ArticleViewController.swift */; };
 		6B6942E31EEA3EAF00A6B4AB /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */; };
@@ -191,6 +192,7 @@
 		6B908A0A1EFBA5B100D7B7F8 /* 144-warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9089781EFBA5B000D7B7F8 /* 144-warning.png */; };
 		6B908A0B1EFBA5B100D7B7F8 /* 145-monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9089791EFBA5B000D7B7F8 /* 145-monitor.png */; };
 		6B908A0C1EFBA5B100D7B7F8 /* 146-sound-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B90897A1EFBA5B000D7B7F8 /* 146-sound-waves.png */; };
+		6B932D981F9EE1F10098B67F /* Farsan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B932D941F9EE1ED0098B67F /* Farsan-Regular.ttf */; };
 		6B97617D1ED6A67C001E11B4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */; };
 		6B9A87B51EF1476000CF5383 /* dingwei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A87B41EF1476000CF5383 /* dingwei.gpx */; };
 		6BA88CB51F3057B300376FD5 /* LZJ_CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA88CB41F3057B300376FD5 /* LZJ_CoinTests.swift */; };
@@ -740,6 +742,7 @@
 		6B3A959A1ECD8BC900A84749 /* LZJ_ShowCoin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZJ_ShowCoin.entitlements; sourceTree = "<group>"; };
 		6B3E9CB61F3D894B00753A03 /* beauty.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = beauty.txt; sourceTree = "<group>"; };
 		6B4095AD1ECEA13A00230FE1 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		6B4A90C51F5D2A5C001E4D9A /* FristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FristViewController.swift; path = LZJ_Coin/FristViewController.swift; sourceTree = SOURCE_ROOT; };
 		6B4C1B571F0383D6008DAE09 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		6B5183AD1F1720AE00657E56 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		6B6942E21EEA3EAF00A6B4AB /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
@@ -902,6 +905,7 @@
 		6B9089781EFBA5B000D7B7F8 /* 144-warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "144-warning.png"; sourceTree = "<group>"; };
 		6B9089791EFBA5B000D7B7F8 /* 145-monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "145-monitor.png"; sourceTree = "<group>"; };
 		6B90897A1EFBA5B000D7B7F8 /* 146-sound-waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "146-sound-waves.png"; sourceTree = "<group>"; };
+		6B932D941F9EE1ED0098B67F /* Farsan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Farsan-Regular.ttf"; sourceTree = "<group>"; };
 		6B97617C1ED6A67C001E11B4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6B9A87B41EF1476000CF5383 /* dingwei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dingwei.gpx; sourceTree = "<group>"; };
 		6BA88CB21F3057B300376FD5 /* LZJ_CoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZJ_CoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1499,10 +1503,12 @@
 		6B191EF91ECD4E0F00C21065 /* LZJ_Coin */ = {
 			isa = PBXGroup;
 			children = (
+				6B932D941F9EE1ED0098B67F /* Farsan-Regular.ttf */,
 				6B0CA6071F3C11A5001643D9 /* food1.jpg */,
 				6B76898B1EE92965006139BB /* Resource */,
 				6B3A957B1ECD4FD800A84749 /* Section */,
 				6B191EFA1ECD4E0F00C21065 /* AppDelegate.swift */,
+				6B4A90C51F5D2A5C001E4D9A /* FristViewController.swift */,
 				6B191EFC1ECD4E0F00C21065 /* ViewController.swift */,
 				6B191EFE1ECD4E0F00C21065 /* Main.storyboard */,
 				6B191F011ECD4E0F00C21065 /* Assets.xcassets */,
@@ -2013,6 +2019,7 @@
 				6B9089891EFBA5B000D7B7F8 /* 015-upload-1.png in Resources */,
 				6B908A091EFBA5B100D7B7F8 /* 143-warning-1.png in Resources */,
 				6B3E9CB71F3D894B00753A03 /* beauty.txt in Resources */,
+				6B932D981F9EE1F10098B67F /* Farsan-Regular.ttf in Resources */,
 				6B908A031EFBA5B100D7B7F8 /* 137-anchor.png in Resources */,
 				6B9089D01EFBA5B000D7B7F8 /* 086-home.png in Resources */,
 				6B9089881EFBA5B000D7B7F8 /* 014-upload-2.png in Resources */,
@@ -2291,6 +2298,7 @@
 				6B3A95841ECD59D200A84749 /* LTCoin.swift in Sources */,
 				6B76898A1EE926CF006139BB /* MusicTableViewController.swift in Sources */,
 				6B3202281EE5086B0094A0C7 /* NewsTableViewCell.swift in Sources */,
+				6B4A90C61F5D2A5C001E4D9A /* FristViewController.swift in Sources */,
 				6B191EFD1ECD4E0F00C21065 /* ViewController.swift in Sources */,
 				6B6942E31EEA3EAF00A6B4AB /* AppHelper.swift in Sources */,
 				6B5183AE1F1720AE00657E56 /* ArticleViewController.swift in Sources */,

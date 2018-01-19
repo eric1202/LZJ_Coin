@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 import HandyJSON
 
+
 class LTCoin: HandyJSON {
 
     public var timeStamp = 0.0
@@ -26,7 +27,7 @@ class LTCoin: HandyJSON {
 
     class func getCurrentPrice(completion:@escaping(_ data:Any?,_ error:Error?)->()){
 
-        Alamofire.request("https://www.okcoin.cn/api/v1/ticker.do?symbol=ltc_cny",method:.get).responseJSON{(res) in
+        Alamofire.request("https://www.okex.com/api/v1/ticker.do?symbol=ltc_usdt",method:.get).responseJSON{(res) in
             if let err = res.error{
                 completion(nil,err)
             }
@@ -40,7 +41,7 @@ class LTCoin: HandyJSON {
     }
 
     class func getKline(type:String,completion:@escaping(_ datas:[LTCoin]?,_ error:Error?)->Void) {
-        let url = "https://www.okcoin.cn/api/v1/kline.do?symbol=ltc_cny&size=480&type="+type
+        let url = "https://www.okex.com/api/v1/kline.do?symbol=ltc_usdt&type="+type
         Alamofire.request(url).responseJSON { (res) in
             if let err = res.error{
                 completion(nil,err)
@@ -50,14 +51,14 @@ class LTCoin: HandyJSON {
                 let arrs = res.value as! NSArray
                 // json to model
                 for v in arrs{
-                    let json = v as! NSArray
+                    let json = v as! [AnyObject]
                     let c = LTCoin.init()
-                    c.timeStamp = json[0] as! Double
-                    c.openPrice = json[1] as! Double
-                    c.highPrice = json[2] as! Double
-                    c.lowPrice = json[3] as! Double
-                    c.endPrice = json[4] as! Double
-                    c.tradeVolume = json[5] as! Double
+                    c.timeStamp = Double(json[0] as! NSNumber)
+                    c.openPrice = Double(json[1] as! String)!
+                    c.highPrice = Double(json[2] as! String)!
+                    c.lowPrice = Double(json[3] as! String)!
+                    c.endPrice = Double(json[4] as! String)!
+                    c.tradeVolume = Double(json[5] as! String)!
 
                     temps .append(c)
                 }
@@ -68,3 +69,5 @@ class LTCoin: HandyJSON {
         }
     }
 }
+
+

@@ -92,8 +92,8 @@ class ViewController: UIViewController {
 
     func loadJuBiData(index:Int) -> () {
         self.loadingView!.startAnimating()
-        let arr = [JuBiCoin.CoinType.IFC,JuBiCoin.CoinType.BTS,JuBiCoin.CoinType.XRP]
-        JuBiCoin.getTicker(type:arr[index-1], completion: { (coin, err) in
+        let arr = [JuBiCoin.CoinType.IFC,JuBiCoin.CoinType.EOS,JuBiCoin.CoinType.NEO,JuBiCoin.CoinType.XRP]
+        JuBiCoin.getTicker(type:arr[index], completion: { (coin, err) in
             self.loadingView!.stopAnimating()
             if let c = coin{
                 let low = c.lowPrice
